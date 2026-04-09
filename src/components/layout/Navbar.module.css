@@ -1,0 +1,182 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #1a3a6e;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.3px;
+  line-height: 1;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+}
+
+.links a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.92rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.links a:hover { color: #fff; }
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.loginBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.6);
+  background: transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.loginBtn:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: #fff;
+}
+
+.demoBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: var(--orange);
+  border: 1.5px solid var(--orange);
+  transition: background 0.2s;
+}
+
+.demoBtn:hover { background: var(--orange-h); border-color: var(--orange-h); }
+
+/* hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+}
+
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* mobile drawer */
+.drawer {
+  display: none;
+  flex-direction: column;
+  background: #1a3a6e;
+  padding: 16px 5% 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.drawer.open { display: flex; }
+
+.drawer a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  transition: color 0.2s;
+}
+
+.drawer a:last-child { border-bottom: none; }
+.drawer a:hover { color: #fff; }
+
+.drawerActions {
+  display: flex;
+  gap: 10px;
+  padding-top: 14px;
+  flex-wrap: wrap;
+}
+
+/* ── Tablet / iPad (769px – 1024px) ── */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .nav { padding: 0 3%; height: 72px; }
+
+  /* Tighten link gap so they fit */
+  .links { gap: 20px; }
+  .links a { font-size: 0.82rem; }
+
+  /* Slightly smaller buttons */
+  .loginBtn,
+  .demoBtn { padding: 7px 14px; font-size: 0.82rem; }
+
+  /* Smaller logo on tablet */
+  .logo img { width: 48px; height: 48px; }
+  .logo span { font-size: 1.2rem; }
+}
+
+/* ── Mobile / small tablet (≤768px) ── */
+@media (max-width: 768px) {
+  .nav { padding: 0 4%; height: 68px; }
+  .links { display: none; }
+  .actions { display: none; }
+  .hamburger { display: flex; }
+
+  .logo img { width: 44px; height: 44px; }
+  .logo span { font-size: 1.1rem; }
+}
+
+/* ── Small phones (≤400px) ── */
+@media (max-width: 400px) {
+  .nav { padding: 0 3%; }
+  .logo span { font-size: 1rem; }
+}

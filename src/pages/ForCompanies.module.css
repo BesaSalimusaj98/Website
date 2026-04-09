@@ -1,0 +1,291 @@
+.page {
+  font-family: 'Inter', sans-serif;
+  color: #1a2f6e;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 500;
+  color: #1a2f6e;
+  margin: 0 0 48px;
+  line-height: 1.4;
+}
+.sectionTitle strong { font-weight: 800; }
+
+.sectionSub {
+  text-align: center;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 560px;
+  margin: -32px auto 48px;
+}
+
+/* ════════════════════════════════
+   Section 1 — Hero
+   ════════════════════════════════ */
+.hero {
+  background: linear-gradient(135deg, #dce8f8 0%, #eef4fd 60%, #f5f8ff 100%);
+  padding: 136px 6% 72px;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroInner {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.heroLeft { flex: 1; padding-bottom: 48px; }
+
+.heroTitle {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 500;
+  color: #1a2f6e;
+  line-height: 1.25;
+  margin: 0 0 18px;
+}
+.heroTitle strong { font-weight: 800; }
+
+.heroSub {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 32px;
+  max-width: 460px;
+}
+
+.heroBtns { display: flex; gap: 14px; flex-wrap: wrap; }
+
+.btnOrange {
+  display: inline-block;
+  background: #f46b1b;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 13px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.btnOrange:hover { background: #d45a10; }
+
+.btnNavy {
+  display: inline-block;
+  background: #1a3a6e;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 13px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.btnNavy:hover { background: #142d56; }
+
+.heroRight {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.heroImg {
+  width: 100%;
+  max-width: 480px;
+  display: block;
+  object-fit: contain;
+}
+
+.heroWave { width: 100%; line-height: 0; }
+.heroWave svg { width: 100%; height: 110px; display: block; }
+
+/* ════════════════════════════════
+   Section 2 — Features
+   ════════════════════════════════ */
+.features {
+  background: #f0f4fa;
+  padding: 72px 6%;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.featureCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 22px;
+  box-shadow: 0 2px 14px rgba(26, 47, 110, 0.07);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.featureHeading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.97rem;
+  color: #1a2f6e;
+  flex-wrap: wrap;
+}
+.featureNum {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.featureList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.featureList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #374151;
+  line-height: 1.45;
+}
+.featureList li svg { flex-shrink: 0; margin-top: 1px; }
+
+/* ════════════════════════════════
+   Section 3 — Universities
+   ════════════════════════════════ */
+.universities {
+  background: #fff;
+  padding: 72px 6%;
+}
+
+.uniGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.uniCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a2f6e;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(26,47,110,0.06);
+}
+.uniLogo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ════════════════════════════════
+   Section 4 — How It Works
+   ════════════════════════════════ */
+.howItWorks {
+  background: #f0f4fa;
+  padding: 72px 6% 80px;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.stepCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 2px 14px rgba(26, 47, 110, 0.07);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stepNum {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a2f6e;
+}
+
+.stepList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.stepList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.83rem;
+  color: #374151;
+  line-height: 1.45;
+}
+.stepList li svg { flex-shrink: 0; margin-top: 1px; }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .heroInner { flex-direction: column; }
+  .heroLeft { padding-bottom: 0; }
+  .heroRight { justify-content: center; }
+  .featureGrid,
+  .stepsGrid { grid-template-columns: repeat(2, 1fr); }
+  .uniGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .featureGrid,
+  .stepsGrid,
+  .uniGrid { grid-template-columns: 1fr; }
+}

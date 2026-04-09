@@ -1,0 +1,215 @@
+.page {
+  font-family: 'Inter', sans-serif;
+  color: #1a2f6e;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #1a2f6e;
+  margin: 0 0 48px;
+}
+.sectionSub {
+  text-align: center;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: -32px auto 48px;
+}
+
+/* ════════════════════════════════
+   Hero
+   ════════════════════════════════ */
+.hero {
+  background: linear-gradient(135deg, #dce8f8 0%, #eef4fd 60%, #f5f8ff 100%);
+  padding: 136px 6% 72px;
+}
+.heroInner {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.heroLeft { flex: 1; }
+.heroTitle {
+  font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+  font-weight: 500;
+  color: #1a2f6e;
+  line-height: 1.25;
+  margin: 0 0 18px;
+}
+.heroTitle strong { font-weight: 800; }
+.heroSub {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 32px;
+  max-width: 460px;
+}
+.heroBtns { display: flex; gap: 14px; flex-wrap: wrap; }
+.btnOrange {
+  display: inline-block;
+  background: #f46b1b;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 13px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.btnOrange:hover { background: #d45a10; }
+.btnNavy {
+  display: inline-block;
+  background: #1a3a6e;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 13px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.btnNavy:hover { background: #142d56; }
+.heroRight {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.heroImg {
+  width: 100%;
+  max-width: 480px;
+  display: block;
+  object-fit: contain;
+}
+
+/* ════════════════════════════════
+   Our Story
+   ════════════════════════════════ */
+.story {
+  background: #fff;
+  padding: 80px 6%;
+}
+.storyInner {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.storyLeft { flex: 1; }
+.storyTitle {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #1a2f6e;
+  margin: 0 0 20px;
+}
+.storyText {
+  color: #374151;
+  font-size: 0.97rem;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 520px;
+}
+.storyRight {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.storyImg {
+  width: 100%;
+  max-width: 460px;
+  display: block;
+  object-fit: contain;
+}
+
+/* ════════════════════════════════
+   Mission & Vision
+   ════════════════════════════════ */
+.mission {
+  background: #f0f4fa;
+  padding: 72px 6%;
+}
+.missionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.missionCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 2px 14px rgba(26, 47, 110, 0.07);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.missionIcon { display: flex; }
+.missionCardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a2f6e;
+  margin: 0;
+}
+.missionCardText {
+  font-size: 0.92rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ════════════════════════════════
+   Team
+   ════════════════════════════════ */
+.team {
+  background: #f0f4fa;
+  padding: 72px 6% 80px;
+}
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.teamCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+.teamAvatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+}
+.teamName {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a2f6e;
+}
+.teamRole {
+  font-size: 0.87rem;
+  color: #6b7280;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .heroInner,
+  .storyInner { flex-direction: column; }
+  .heroRight,
+  .storyRight { justify-content: center; }
+  .missionGrid { grid-template-columns: 1fr; }
+  .teamGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .teamGrid { grid-template-columns: 1fr 1fr; }
+}

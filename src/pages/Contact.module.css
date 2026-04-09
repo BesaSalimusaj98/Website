@@ -1,0 +1,228 @@
+.page {
+  font-family: 'Inter', sans-serif;
+  color: #1a2f6e;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #1a2f6e;
+  margin: 0 0 10px;
+}
+.sectionSub {
+  text-align: center;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 auto 40px;
+  max-width: 520px;
+}
+
+/* ════════════════════════════════
+   Hero
+   ════════════════════════════════ */
+.hero {
+  background: linear-gradient(135deg, #dce8f8 0%, #eef4fd 60%, #f5f8ff 100%);
+  padding: 136px 6% 72px;
+}
+.heroInner {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.heroLeft { flex: 1; }
+.heroTitle {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #1a2f6e;
+  margin: 0 0 14px;
+}
+.heroSub {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 380px;
+}
+.heroRight {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.heroImg {
+  width: 100%;
+  max-width: 460px;
+  display: block;
+  object-fit: contain;
+}
+
+/* ════════════════════════════════
+   Form Section
+   ════════════════════════════════ */
+.formSection {
+  background: #f0f4fa;
+  padding: 72px 6%;
+}
+
+.formCard {
+  background: #fff;
+  border-radius: 16px;
+  border: 1.5px solid #e5e7eb;
+  padding: 36px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: 0 2px 20px rgba(26, 47, 110, 0.07);
+}
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a2f6e;
+  margin: 0 0 6px;
+}
+.cardSub {
+  font-size: 0.87rem;
+  color: #6b7280;
+  margin: 0 0 28px;
+}
+
+.form { display: flex; flex-direction: column; gap: 14px; }
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.inputWrap {
+  position: relative;
+}
+.inputIcon {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.inputWrap input,
+.inputWrap textarea {
+  width: 100%;
+  padding: 12px 14px 12px 38px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  color: #1a2f6e;
+  background: #f9fafb;
+  outline: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  resize: none;
+}
+.inputWrap input:focus,
+.inputWrap textarea:focus { border-color: #1a3a6e; background: #fff; }
+.inputWrap input::placeholder,
+.inputWrap textarea::placeholder { color: #9ca3af; }
+
+.formFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.privacy {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+.submitBtn {
+  background: #f46b1b;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px 36px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.submitBtn:hover { background: #d45a10; }
+
+.successMsg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 0;
+  text-align: center;
+  color: #1a2f6e;
+}
+.successMsg strong { font-size: 1.1rem; }
+.successMsg p { color: #6b7280; margin: 0; }
+
+/* ════════════════════════════════
+   Get in Touch
+   ════════════════════════════════ */
+.getInTouch {
+  background: #f0f4fa;
+  padding: 72px 6% 80px;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contactCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 20px;
+  border-radius: 14px;
+  border: 1.5px solid #e5e7eb;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(26,47,110,0.06);
+}
+.contactIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.contactLabel {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a2f6e;
+  margin-bottom: 4px;
+}
+.contactVal {
+  font-size: 0.88rem;
+  color: #374151;
+  margin: 0 0 4px;
+  font-weight: 500;
+}
+.contactNote {
+  font-size: 0.83rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ── Responsive ── */
+@media (max-width: 820px) {
+  .heroInner { flex-direction: column; }
+  .heroRight { justify-content: center; }
+  .row { grid-template-columns: 1fr; }
+  .formCard { padding: 28px 20px; }
+  .contactGrid { grid-template-columns: 1fr; }
+}

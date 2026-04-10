@@ -60,6 +60,8 @@ export default function PageHero({
                 <a
                   href={secondaryBtn.href}
                   className={styles.btnSecondary}
+                  target={secondaryBtn.target}
+                  rel={secondaryBtn.rel}
                   onClick={secondaryBtn.onClick}
                 >
                   {secondaryBtn.label}

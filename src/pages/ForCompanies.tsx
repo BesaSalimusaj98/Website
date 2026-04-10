@@ -1,6 +1,7 @@
 import companiesHero from "../assets/companies-hero.png";
 import styles from "./ForCompanies.module.css";
 import PageHero from "../components/layout/PageHero";
+import { STAZHLINK_APP_URL, STAZHLINK_LOGIN_URL } from "../constants/links";
 
 /* ── Feature icons ── */
 const PostingIcon = () => (
@@ -66,8 +67,8 @@ const features = [
     title: "Compliance & Documentation",
     titleStrong: "Compliance",
     items: [
-      "Generate official internship agreements",
-      "Securely download completion certificates",
+      "Generate official internship feedback reports",
+      "Securely download completion feedback certificates",
     ],
   },
 ];
@@ -116,8 +117,8 @@ export default function ForCompanies() {
         subtitle="Use StazhLink to connect with university students looking for internship opportunities. Manage applications easily and hire the best talent from top universities."
         imgSrc={companiesHero}
         imgAlt="Company internship recruitment"
-        primaryBtn={{ label: "Register Company", href: "https://app.stazhlink.com/", target: "_blank", rel: "noopener noreferrer" }}
-        secondaryBtn={{ label: "Start Free Trial", href: "#", onClick: (e) => e.preventDefault() }}
+        primaryBtn={{ label: "Register Company", href: STAZHLINK_LOGIN_URL, target: "_blank", rel: "noopener noreferrer" }}
+        secondaryBtn={{ label: "Start Free Trial", href: STAZHLINK_APP_URL, target: "_blank", rel: "noopener noreferrer" }}
         waveColor="#f0f4fa"
       />
 
@@ -153,7 +154,7 @@ export default function ForCompanies() {
         </div>
       </section>
 
-      {/* ── Section 3: University Partners ── */}
+      {/* ── Section 3: University Partners ──
       <section className={styles.universities}>
         <h2 className={styles.sectionTitle}>
           <strong>Access Talent</strong> from Leading Universities
@@ -171,7 +172,7 @@ export default function ForCompanies() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* ── Section 4: How It Works ── */}
       <section className={styles.howItWorks}>

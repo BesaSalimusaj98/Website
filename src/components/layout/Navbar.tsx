@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logoIcon from '../../assets/logo-icon.png';
+import { CONTACT_PAGE_PATH, STAZHLINK_LOGIN_URL } from '../../constants/links';
 import styles from './Navbar.module.css';
 
 const navLinks = [
@@ -33,8 +34,8 @@ export default function Navbar() {
         </ul>
 
         <div className={styles.actions}>
-          <a href="https://app.stazhlink.com/" className={styles.loginBtn}>Login</a>
-          <Link to="/contact" className={styles.demoBtn}>Request Demo</Link>
+          <a href={STAZHLINK_LOGIN_URL} className={styles.loginBtn} target="_blank" rel="noopener noreferrer">Login</a>
+          <Link to={CONTACT_PAGE_PATH} className={styles.demoBtn}>Request Demo</Link>
         </div>
 
         <button
@@ -54,8 +55,8 @@ export default function Navbar() {
             : <a key={l.label} href={l.href} onClick={() => setOpen(false)}>{l.label}</a>
         )}
         <div className={styles.drawerActions}>
-          <a href="https://app.stazhlink.com/" className={styles.loginBtn} onClick={() => setOpen(false)}>Login</a>
-          <Link to="/contact" className={styles.demoBtn} onClick={() => setOpen(false)}>Request Demo</Link>
+          <a href={STAZHLINK_LOGIN_URL} className={styles.loginBtn} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Login</a>
+          <Link to={CONTACT_PAGE_PATH} className={styles.demoBtn} onClick={() => setOpen(false)}>Request Demo</Link>
         </div>
       </div>
     </>

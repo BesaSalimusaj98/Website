@@ -1,7 +1,8 @@
-import universitiesHero from "../assets/universities-hero.png";
-import companiesHero from "../assets/companies-hero.png";
+import aboutheropage from "../assets/Diskutime biznesi dhe teknologjia.png";
+import aboutStory from "../assets/Menaxhimi i praktikave të stazhit.png";
 import styles from "./About.module.css";
 import PageHero from "../components/layout/PageHero";
+import { STAZHLINK_APP_URL } from "../constants/links";
 
 /* Placeholder avatar SVGs until real photos are added */
 const Avatar = ({ initials, bg }: { initials: string; bg: string }) => (
@@ -28,10 +29,10 @@ export default function About() {
       <PageHero
         title={<><strong>Empowering Universities</strong> Through<br /><strong>Streamlined Internship</strong> Management</>}
         subtitle="Our mission is to centralize and simplify the internship process, bridging academia and industry for the benefit of students, professors, and companies."
-        imgSrc={universitiesHero}
+        imgSrc={aboutheropage}
         imgAlt="StazhLink platform"
         primaryBtn={{ label: "Our Story", href: "#story" }}
-        secondaryBtn={{ label: "Start Free Trial", href: "#", onClick: (e) => e.preventDefault() }}
+        secondaryBtn={{ label: "Start Free Trial", href: STAZHLINK_APP_URL, target: "_blank", rel: "noopener noreferrer" }}
         waveColor="#fff"
       />
 
@@ -46,14 +47,14 @@ export default function About() {
               manual internship processes. We saw that students often
               struggled to find internships, professors had limited oversight,
               and companies had no dedicated channel to reach university
-              talent. We created StazhLink as a solution — a
+              talent. We created StazhLink as a solution, a
               comprehensive platform that brings all stakeholders under
               one system, ensuring a structured, transparent, and efficient
               internship process from start to finish.
             </p>
           </div>
           <div className={styles.storyRight}>
-            <img src={companiesHero} alt="Our story" className={styles.storyImg} />
+            <img src={aboutStory} alt="Our story" className={styles.storyImg} />
           </div>
         </div>
       </section>
@@ -100,7 +101,7 @@ export default function About() {
       </section>
 
       {/* ── Section 4: Team ── */}
-      <section className={styles.team}>
+      {/* <section className={styles.team}>
         <h2 className={styles.sectionTitle}>Meet Our Team</h2>
         <p className={styles.sectionSub}>
           The team behind StazhLink is a dedicated group of professionals passionate about education and technology.
@@ -116,7 +117,7 @@ export default function About() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
     </main>
   );

@@ -8,6 +8,8 @@ import ForCompanies from './pages/ForCompanies';
 import FAQ from './pages/FAQ';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Terms from './pages/Terms';
 import './index.css';
 
 export default function App() {
@@ -22,6 +24,8 @@ export default function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<Terms />} />
       </Routes>
       <Footer />
     </BrowserRouter>

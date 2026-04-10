@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { CONTACT_PAGE_PATH, PRIVACY_POLICY_PATH, STAZHLINK_APP_URL, TERMS_PATH } from '../../constants/links';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -17,16 +19,16 @@ export default function Footer() {
       <div className={styles.inner}>
         <h2>Bring Structure to Your Internship Program</h2>
         <div className={styles.actions}>
-          <a href="/contact" className={styles.demoBtn}>Request Demo</a>
-          <a href="https://app.stazhlink.com/" className={styles.startBtn}>Get Started Today</a>
+          <a href={CONTACT_PAGE_PATH} className={styles.demoBtn}>Request Demo</a>
+          <a href={STAZHLINK_APP_URL} className={styles.startBtn} target="_blank" rel="noopener noreferrer">Get Started Today</a>
         </div>
       </div>
 
       <div className={styles.bottom}>
         <span>© 2025 StazhLink. All rights reserved.</span>
         <div className={styles.links}>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms &amp; Conditions</a>
+          <Link to={PRIVACY_POLICY_PATH}>Privacy Policy</Link>
+          <Link to={TERMS_PATH}>Terms &amp; Conditions</Link>
         </div>
       </div>
     </footer>

@@ -1,17 +1,43 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import universitiesHero from "../assets/universities-hero.png";
 import styles from "./Contact.module.css";
 import PageHero from "../components/layout/PageHero";
 
+const SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID  as string;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string;
+const PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY  as string;
+
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending]     = useState(false);
+  const [error, setError]         = useState("");
   const [form, setForm] = useState({
     name: "", email: "", org: "", phone: "", message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSending(true);
+    setError("");
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          from_name:    form.name,
+          from_email:   form.email,
+          organization: form.org,
+          message:      form.message,
+        },
+        PUBLIC_KEY,
+      );
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please try again or email us directly.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -93,8 +119,11 @@ export default function Contact() {
               </div>
               <div className={styles.formFooter}>
                 <span className={styles.privacy}>We'll never share your information.</span>
-                <button type="submit" className={styles.submitBtn}>Submit</button>
+                <button type="submit" className={styles.submitBtn} disabled={sending}>
+                  {sending ? "Sending…" : "Submit"}
+                </button>
               </div>
+              {error && <p style={{ color: "#ef4444", fontSize: "0.9rem", marginTop: "8px" }}>{error}</p>}
             </form>
           )}
         </div>
@@ -118,18 +147,6 @@ export default function Contact() {
             </div>
           </div>
           <div className={styles.contactCard}>
-            <div className={styles.contactIcon} style={{ background: "#f0fdf4" }}>
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path d="M4 4.5C4 4.5 5.5 2.5 7.5 4.5L9 6.5C9 6.5 9.8 7.5 8.5 8.8C7.2 10.1 9 11.8 11 13.8C13 15.8 14.7 17.6 16 16.3C17.3 15 18.3 15.8 18.3 15.8L20 17.5C22 19.5 20 21 20 21C17 23.5 2 11 4 4.5Z" stroke="#10b981" strokeWidth="1.6" />
-              </svg>
-            </div>
-            <div>
-              <strong className={styles.contactLabel}>Phone</strong>
-              <p className={styles.contactVal}>+1 (123) 456-7890</p>
-              <p className={styles.contactNote}>Give us a call Monday to Friday, 9am to 6pm (local time).</p>
-            </div>
-          </div>
-          <div className={styles.contactCard}>
             <div className={styles.contactIcon} style={{ background: "#fff3eb" }}>
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
                 <path d="M11 2C7.7 2 5 4.7 5 8c0 5 6 12 6 12s6-7 6-12c0-3.3-2.7-6-6-6z" stroke="#f46b1b" strokeWidth="1.8" fill="none" />
@@ -138,8 +155,7 @@ export default function Contact() {
             </div>
             <div>
               <strong className={styles.contactLabel}>Address</strong>
-              <p className={styles.contactVal}>123 Internship Ave, Suite 456</p>
-              <p className={styles.contactNote}>City, Country</p>
+              <p className={styles.contactVal}>Tirana, Albania</p>
             </div>
           </div>
         </div>

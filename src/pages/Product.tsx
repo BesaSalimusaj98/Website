@@ -3,6 +3,7 @@ import studentDashboard from "../assets/student-dashboard.png";
 import companyDashboard from "../assets/company-dashboard.png";
 import professorDashboard from "../assets/professor-dashboard.png";
 import adminDashboard from "../assets/admin-dashboard.png";
+import { CONTACT_PAGE_PATH } from "../constants/links";
 import styles from "./Product.module.css";
 
 /* ── Inline SVG role icons ── */
@@ -185,7 +186,7 @@ export default function Product() {
                 </li>
               ))}
             </ul>
-            <a href="/contact" className={styles.demoBtn}>Request Demo</a>
+            <a href={CONTACT_PAGE_PATH} className={styles.demoBtn}>Request Demo</a>
           </div>
         </div>
       </section>

@@ -12,7 +12,7 @@ const general: FAQItem[] = [
   },
   {
     q: "How does the internship workflow work?",
-    a: "Students apply to internships, companies review applications, professors approve supervision requests, and administrators oversee the entire process — all from one platform.",
+    a: "Students apply to internships, companies review applications, professors approve supervision requests, and administrators oversee the entire process all from one platform.",
   },
   {
     q: "Can my university quickly integrate StazhLink?",
@@ -35,15 +35,15 @@ const general: FAQItem[] = [
 const forStudents: FAQItem[] = [
   { q: "How do I find and apply for internships?", a: "Browse available listings from partner companies directly in your student dashboard and submit your application with one click." },
   { q: "Do I need faculty supervision to apply to internships?", a: "Some internships require a professor to approve your supervision request before the company can proceed. Your university sets this policy." },
-  { q: "Can I track my internship application status?", a: "Yes — your dashboard shows real-time status updates for every application you've submitted." },
+  { q: "Can I track my internship application status?", a: "Yes, your dashboard shows real-time status updates for every application you've submitted." },
   { q: "How do I download my internship completion certificate?", a: "Once your internship is marked complete by both the company and your professor, you can download your official certificate from your profile." },
 ];
 
 const forCompanies: FAQItem[] = [
   { q: "How can a company post internships?", a: "After registering your company, go to your dashboard and click 'Post Internship'. Fill in the details, requirements, and available spots." },
   { q: "How does a company review and accept student applications?", a: "Applications appear in your dashboard as students apply. You can review documents, leave notes, and accept or reject with one click." },
-  { q: "Can we leave feedback on interns?", a: "Yes — at the end of the internship, companies can submit a structured feedback report which becomes part of the student's record." },
-  { q: "Are internship agreements generated automatically?", a: "Yes. Once all parties approve, StazhLink generates an official internship agreement that can be signed and downloaded by all stakeholders." },
+  { q: "Can we leave feedback on interns?", a: "Yes, at the end of the internship, companies can submit a structured feedback report which becomes part of the student's record." },
+  { q: "Are internship agreements generated automatically?", a: "Yes. Once all parties approve, StazhLink generates an official internship feedback that can be signed and downloaded by all stakeholders." },
 ];
 
 function Accordion({ items }: { items: FAQItem[] }) {

@@ -1,6 +1,7 @@
 import styles from "./Home.module.css";
 import workflowImg from "../assets/workflow-illustration.png";
 import PageHero from "../components/layout/PageHero";
+import { CONTACT_PAGE_PATH, STAZHLINK_APP_URL } from "../constants/links";
 
 /* ─── Hero icons / helpers ─── */
 
@@ -169,8 +170,8 @@ export default function Home() {
         title={<>The Internship Management<br />Platform for Universities</>}
         subtitle="Connecting Students, Professors, Companies & Administrators in One Streamlined System."
         rightContent={mockup}
-        primaryBtn={{ label: "Request Demo", href: "/contact" }}
-        secondaryBtn={{ label: "Go to Platform", href: "https://app.stazhlink.com/" }}
+        primaryBtn={{ label: "Request Demo", href: CONTACT_PAGE_PATH }}
+        secondaryBtn={{ label: "Go to Platform", href: STAZHLINK_APP_URL, target: "_blank", rel: "noopener noreferrer" }}
         waveColor="#f0f4fa"
       />
 
@@ -260,7 +261,7 @@ export default function Home() {
       </section>
 
       {/* ── Trusted ── */}
-      <section className={styles.trustSection}>
+      {/* <section className={styles.trustSection}>
         <div className={styles.dividerRow}>
           <span className={styles.line} />
           <h2 className={styles.trustTitle}>Trusted by Universities &amp; Companies</h2>
@@ -275,7 +276,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
     </main>
   );

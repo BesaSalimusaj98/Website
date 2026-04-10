@@ -1,0 +1,95 @@
+.page {
+  font-family: 'Inter', sans-serif;
+  color: #1a2f6e;
+}
+
+/* ── Page header ── */
+.header {
+  background: linear-gradient(135deg, #1a3a6e 0%, #2357b8 100%);
+  padding: 120px 6% 64px;
+  color: #fff;
+}
+
+.headerInner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+
+.meta {
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* ── Content area ── */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 64px 6% 96px;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a3a6e;
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e8edf7;
+}
+
+.section p {
+  font-size: 0.96rem;
+  color: #374151;
+  line-height: 1.8;
+  margin: 0 0 12px;
+}
+
+.section ul {
+  padding-left: 20px;
+  margin: 8px 0 12px;
+}
+
+.section ul li {
+  font-size: 0.96rem;
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 4px;
+}
+
+.section a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.section a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #e8edf7;
+  margin: 0 0 48px;
+}

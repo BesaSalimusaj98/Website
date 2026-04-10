@@ -2,6 +2,7 @@ import universitiesHero from "../assets/universities-hero.png";
 import adminDashboard from "../assets/admin-dashboard.png";
 import styles from "./ForUniversities.module.css";
 import PageHero from "../components/layout/PageHero";
+import { CONTACT_PAGE_PATH, STAZHLINK_APP_URL } from "../constants/links";
 
 /* ── Challenge card icons ── */
 const icons = {
@@ -53,28 +54,44 @@ const challenges = [
     numColor: "#f46b1b",
     icon: icons.oversight,
     title: "Lack of Oversight",
-    items: ["Search internship status", "Request pending applications", "Reassign ongoing operations"],
+    items: [
+      "Limited visibility into student internship progress",
+      "Difficult to track approvals across departments",
+      "Manual follow-up slows coordination",
+    ],
   },
   {
     num: "2",
     numColor: "#1a3a6e",
     icon: icons.supervision,
     title: "Professor Supervision",
-    items: ["Payment application status", "Parents in agency of loans", "Manage or approval plans before"],
+    items: [
+      "Students need guidance to find suitable internships",
+      "Communication between students and professors is fragmented",
+      "Tracking progress and giving feedback takes too much manual work",
+    ],
   },
   {
     num: "A",
     numColor: "#2563eb",
     icon: icons.compliance,
     title: "Internship Compliance",
-    items: ["Demand internship details", "Proper level compliances", "Include user processes"],
+    items: [
+      "Internship requirements are handled manually",
+      "Missing documents can delay approvals",
+      "Keeping a clear record of each internship is difficult",
+    ],
   },
   {
     num: "5",
     numColor: "#f46b1b",
     icon: icons.analytics,
     title: "Analytics & Report",
-    items: ["Execute target & attests", "Coach internships tutoring", "Provide all team starlead"],
+    items: [
+      "Reporting often depends on spreadsheets and manual updates",
+      "It is hard to monitor internship activity at scale",
+      "Universities lack clear insights into outcomes and feedback",
+    ],
   },
 ];
 
@@ -96,8 +113,8 @@ export default function ForUniversities() {
         subtitle="StazhLink empowers university administrators to oversee and manage internships from a central platform, ensuring seamless coordination and compliance."
         imgSrc={universitiesHero}
         imgAlt="University internship management"
-        primaryBtn={{ label: "Request Demo", href: "/contact" }}
-        secondaryBtn={{ label: "Start Free Trial", href: "#", onClick: (e) => e.preventDefault() }}
+        primaryBtn={{ label: "Request Demo", href: CONTACT_PAGE_PATH }}
+        secondaryBtn={{ label: "Start Free Trial", href: STAZHLINK_APP_URL, target: "_blank", rel: "noopener noreferrer" }}
         waveColor="#f0f4fa"
       />
 

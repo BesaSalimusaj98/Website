@@ -73,13 +73,6 @@ const features = [
   },
 ];
 
-const universities = [
-  { name: "Albanian University", abbr: "AU", color: "#c8a84b" },
-  { name: "EPOKA University",    abbr: "EP", color: "#1a3a6e" },
-  { name: "Your University",     abbr: "U",  color: "#9ca3af" },
-  { name: "Your University",     abbr: "U",  color: "#9ca3af" },
-];
-
 const steps = [
   {
     num: "1",

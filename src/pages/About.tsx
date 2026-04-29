@@ -4,23 +4,6 @@ import styles from "./About.module.css";
 import PageHero from "../components/layout/PageHero";
 import { STAZHLINK_APP_URL } from "../constants/links";
 
-/* Placeholder avatar SVGs until real photos are added */
-const Avatar = ({ initials, bg }: { initials: string; bg: string }) => (
-  <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
-    <circle cx="60" cy="60" r="60" fill={bg} />
-    <circle cx="60" cy="48" r="22" fill="#fff" opacity="0.9" />
-    <path d="M20 108c0-22 18-36 40-36s40 14 40 36" fill="#fff" opacity="0.9" />
-    <text x="60" y="54" textAnchor="middle" dominantBaseline="middle" fontSize="20" fontWeight="700" fill={bg} fontFamily="Inter,sans-serif">{initials}</text>
-  </svg>
-);
-
-const team = [
-  { name: "John Doe",      role: "CEO & Co-Founder",  initials: "JD", bg: "#1a3a6e" },
-  { name: "Jane Smith",    role: "COO & Co-Founder",  initials: "JS", bg: "#2563eb" },
-  { name: "Michael Brown", role: "CTO",               initials: "MB", bg: "#0d9488" },
-  { name: "Sarah Miller",  role: "Head of Product",   initials: "SM", bg: "#f46b1b" },
-];
-
 export default function About() {
   return (
     <main className={styles.page}>

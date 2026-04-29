@@ -130,14 +130,6 @@ const features = [
   { Icon: DashboardIcon,   title: "Role-Based Dashboards" },
 ];
 
-/* ─── Trusted stats ─── */
-const stats = [
-  { value: "50+",    label: "Universities",      icon: "🏛️" },
-  { value: "200+",   label: "Partner Companies",  icon: "🏢" },
-  { value: "5,000+", label: "Students Placed",    icon: "🎓" },
-  { value: "98%",    label: "Satisfaction Rate",  icon: "⭐" },
-];
-
 export default function Home() {
   const mockup = (
     <div className={styles.mockup}>

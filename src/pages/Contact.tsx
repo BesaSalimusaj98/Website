@@ -23,15 +23,19 @@ export default function Contact() {
     setSending(true);
     setError("");
     try {
+      const templateParams = {
+        name: form.name,
+        email: form.email,
+        phone: form.phone || "Not provided",
+        subscribe: "No",
+        message: form.message,
+        time: new Date().toLocaleString(),
+      };
+
       await emailjs.send(
         SERVICE_ID,
         TEMPLATE_ID,
-        {
-          from_name:    form.name,
-          from_email:   form.email,
-          organization: form.org,
-          message:      form.message,
-        },
+        templateParams,
         PUBLIC_KEY,
       );
       setSubmitted(true);

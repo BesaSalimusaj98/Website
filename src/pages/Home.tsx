@@ -1,24 +1,25 @@
 import styles from "./Home.module.css";
 import workflowImg from "../assets/workflow-illustration.png";
 import PageHero from "../components/layout/PageHero";
+import { useTranslation } from "react-i18next";
 import { CONTACT_PAGE_PATH, STAZHLINK_APP_URL } from "../constants/links";
 
 /* ─── Hero icons / helpers ─── */
 
-/* ─── Problem data ─── */
-const problemCards = [
-  { avatar: "🧑",   badge: "✅", badgeColor: "#22c55e", bold: "Students",   desc: "are Lost in the Search" },
-  { avatar: "👨‍🏫", badge: "❌", badgeColor: "#ef4444", bold: "Professors", desc: "Lack Oversight" },
-  { avatar: "🧑‍💼", badge: "✅", badgeColor: "#22c55e", bold: "Companies",  desc: "Can't Reach Students" },
-  { avatar: "👩",   badge: "✅", badgeColor: "#22c55e", bold: "Admins",     desc: "Have No Control" },
+/* ─── Problem data (static structure, text from i18n) ─── */
+const problemCardsMeta = [
+  { id: "students",   avatar: "🧑",   badge: "✅", badgeColor: "#22c55e", boldKey: "home.problem.studentsBold",   descKey: "home.problem.studentsDesc" },
+  { id: "professors", avatar: "👨‍🏫", badge: "❌", badgeColor: "#ef4444", boldKey: "home.problem.professorsBold", descKey: "home.problem.professorsDesc" },
+  { id: "companies",  avatar: "🧑‍💼", badge: "✅", badgeColor: "#22c55e", boldKey: "home.problem.companiesBold",  descKey: "home.problem.companiesDesc" },
+  { id: "admins",     avatar: "👩",   badge: "✅", badgeColor: "#22c55e", boldKey: "home.problem.adminsBold",     descKey: "home.problem.adminsDesc" },
 ];
 
-const steps = [
-  { num: 1, label: "Find Internship",      color: "#f46b1b" },
-  { num: 2, label: "Request Professor",    color: "#3b82f6" },
-  { num: 3, label: "Company Approves",     color: "#1a3a6e" },
-  { num: 4, label: "Professor Approves",   color: "#22c55e" },
-  { num: 5, label: "Internship Completed", color: "#f46b1b" },
+const stepsMeta = [
+  { num: 1, color: "#f46b1b" },
+  { num: 2, color: "#3b82f6" },
+  { num: 3, color: "#1a3a6e" },
+  { num: 4, color: "#22c55e" },
+  { num: 5, color: "#f46b1b" },
 ];
 
 /* ─── For Everyone icons ─── */
@@ -51,11 +52,11 @@ const AdminIcon = () => (
   </svg>
 );
 
-const roleCards = [
-  { label: "For Students",       color: "#1a3a6e", Icon: StudentIcon,   action: "Search, Apply, Track" },
-  { label: "For Professors",     color: "#f46b1b", Icon: ProfessorIcon, action: "Supervise & Approve" },
-  { label: "For Companies",      color: "#0d9488", Icon: CompanyIcon,   action: "Post & Manage Interns" },
-  { label: "For Administrators", color: "#2d4ea2", Icon: AdminIcon,     action: "Oversee & Report" },
+const roleCardsMeta = [
+  { id: "students",   labelKey: "home.everyone.studentsLabel",   color: "#1a3a6e", Icon: StudentIcon,   actionKey: "home.everyone.studentsAction" },
+  { id: "professors", labelKey: "home.everyone.professorsLabel", color: "#f46b1b", Icon: ProfessorIcon, actionKey: "home.everyone.professorsAction" },
+  { id: "companies",  labelKey: "home.everyone.companiesLabel",  color: "#0d9488", Icon: CompanyIcon,   actionKey: "home.everyone.companiesAction" },
+  { id: "admins",     labelKey: "home.everyone.adminsLabel",     color: "#2d4ea2", Icon: AdminIcon,     actionKey: "home.everyone.adminsAction" },
 ];
 
 /* ─── Features icons ─── */
@@ -121,13 +122,13 @@ const DashboardIcon = () => (
   </svg>
 );
 
-const features = [
-  { Icon: ListingIcon,     title: "Internship Listings" },
-  { Icon: TrackingIcon,    title: "Application Tracking" },
-  { Icon: SupervisionIcon, title: "Professor Supervision" },
-  { Icon: DocsIcon,        title: "Automated Docs" },
-  { Icon: FeedbackIcon,    title: "Feedback & Reporting" },
-  { Icon: DashboardIcon,   title: "Role-Based Dashboards" },
+const featuresMeta = [
+  { Icon: ListingIcon,     titleKey: "home.features.internshipListings" },
+  { Icon: TrackingIcon,    titleKey: "home.features.applicationTracking" },
+  { Icon: SupervisionIcon, titleKey: "home.features.professorSupervision" },
+  { Icon: DocsIcon,        titleKey: "home.features.automatedDocs" },
+  { Icon: FeedbackIcon,    titleKey: "home.features.feedbackReporting" },
+  { Icon: DashboardIcon,   titleKey: "home.features.roleBasedDashboards" },
 ];
 
 /* ─── Trusted stats ─── */
@@ -139,6 +140,8 @@ const stats = [
 ];
 
 export default function Home() {
+  const { t } = useTranslation();
+
   const mockup = (
     <div className={styles.mockup}>
       <div className={styles.window}>
@@ -148,9 +151,9 @@ export default function Home() {
           <span className={styles.dot} style={{ background: "#28c840" }} />
         </div>
         <div className={styles.winBody}>
-          <p className={styles.winTitle}>Internship Application Progress</p>
+          <p className={styles.winTitle}>{t('home.hero.mockupTitle')}</p>
           <div className={styles.progress}>
-            <img src={workflowImg} alt="Internship workflow: Student Applied → Company Review → Professor Approval → Final Acceptance" className={styles.workflowImg} />
+            <img src={workflowImg} alt="Internship workflow" className={styles.workflowImg} />
           </div>
           <div className={styles.bars}>
             <div className={styles.bar} style={{ width: "80%", background: "#dbeafe" }} />
@@ -167,28 +170,28 @@ export default function Home() {
 
       {/* ── Hero ── */}
       <PageHero
-        title={<>The Internship Management<br />Platform for Universities</>}
-        subtitle="Connecting Students, Professors, Companies & Administrators in One Streamlined System."
+        title={<>{t('home.hero.titleLine1')}<br />{t('home.hero.titleLine2')}</>}
+        subtitle={t('home.hero.subtitle')}
         rightContent={mockup}
-        primaryBtn={{ label: "Request Demo", href: CONTACT_PAGE_PATH }}
-        secondaryBtn={{ label: "Go to Platform", href: STAZHLINK_APP_URL, target: "_blank", rel: "noopener noreferrer" }}
+        primaryBtn={{ label: t('home.hero.primaryBtn'), href: CONTACT_PAGE_PATH }}
+        secondaryBtn={{ label: t('home.hero.secondaryBtn'), href: STAZHLINK_APP_URL, target: "_blank", rel: "noopener noreferrer" }}
         waveColor="#f0f4fa"
       />
 
       {/* ── Problem / How It Works ── */}
       <section className={styles.probWrapper}>
         <h2 className={styles.brokenTitle}>
-          Internship Processes are <strong>Broken...</strong>
+          {t('home.problem.title')} <strong>{t('home.problem.titleStrong')}</strong>
         </h2>
         <div className={styles.probGrid}>
-          {problemCards.map((c) => (
-            <div className={styles.probCard} key={c.bold}>
+          {problemCardsMeta.map((c) => (
+            <div className={styles.probCard} key={c.id}>
               <div className={styles.avatarWrap}>
                 <span className={styles.avatarEmoji}>{c.avatar}</span>
                 <span className={styles.badge} style={{ background: c.badgeColor }}>{c.badge}</span>
               </div>
               <p className={styles.cardText}>
-                <strong>{c.bold}</strong> {c.desc}
+                <strong>{t(c.boldKey)}</strong> {t(c.descKey)}
               </p>
             </div>
           ))}
@@ -196,24 +199,24 @@ export default function Home() {
 
         <div className={styles.dividerRow}>
           <span className={styles.line} />
-          <h2 className={styles.fixesTitle}>StazhLink Fixes This</h2>
+          <h2 className={styles.fixesTitle}>{t('home.problem.fixesTitle')}</h2>
           <span className={styles.line} />
         </div>
-        <p className={styles.fixesSub}>All-in-One Internship Management Solution</p>
+        <p className={styles.fixesSub}>{t('home.problem.fixesSub')}</p>
 
         <div className={styles.dividerRow} style={{ marginTop: "36px" }}>
           <span className={styles.line} />
-          <h2 className={styles.howTitle}>How It Works</h2>
+          <h2 className={styles.howTitle}>{t('home.problem.howTitle')}</h2>
           <span className={styles.line} />
         </div>
         <div className={styles.probFlow}>
-          {steps.map((s, i) => (
+          {stepsMeta.map((s, i) => (
             <div key={s.num} className={styles.stepGroup}>
               <div className={styles.probStep}>
                 <div className={styles.stepNum} style={{ background: s.color }}>{s.num}</div>
-                <span className={styles.stepLabel}>{s.label}</span>
+                <span className={styles.stepLabel}>{t(`home.steps.${i}`)}</span>
               </div>
-              {i < steps.length - 1 && <div className={styles.probArrow}>▶</div>}
+              {i < stepsMeta.length - 1 && <div className={styles.probArrow}>▶</div>}
             </div>
           ))}
         </div>
@@ -223,18 +226,18 @@ export default function Home() {
       <section className={styles.feSection}>
         <div className={styles.dividerRow}>
           <span className={styles.line} />
-          <h2 className={styles.feTitle}>A Platform for Everyone</h2>
+          <h2 className={styles.feTitle}>{t('home.everyone.title')}</h2>
           <span className={styles.line} />
         </div>
         <div className={styles.feGrid}>
-          {roleCards.map((c) => (
-            <div className={styles.feCard} key={c.label}>
+          {roleCardsMeta.map((c) => (
+            <div className={styles.feCard} key={c.id}>
               <div className={styles.pill} style={{ background: c.color }}>
-                {c.label}
+                {t(c.labelKey)}
               </div>
               <div className={styles.action}>
                 <span className={styles.actionIcon}><c.Icon /></span>
-                <span className={styles.actionText}>{c.action}</span>
+                <span className={styles.actionText}>{t(c.actionKey)}</span>
               </div>
             </div>
           ))}
@@ -246,37 +249,19 @@ export default function Home() {
         <div className={styles.dividerRow}>
           <span className={styles.line} />
           <h2 className={styles.featTitle}>
-            Key Features of <span className={styles.accent}>StazhLink</span>
+            {t('home.features.title')} <span className={styles.accent}>{t('home.features.titleAccent')}</span>
           </h2>
           <span className={styles.line} />
         </div>
         <div className={styles.featGrid}>
-          {features.map((f) => (
-            <div className={styles.featItem} key={f.title}>
+          {featuresMeta.map((f) => (
+            <div className={styles.featItem} key={f.titleKey}>
               <div className={styles.iconCircle}><f.Icon /></div>
-              <span className={styles.featLabel}>{f.title}</span>
+              <span className={styles.featLabel}>{t(f.titleKey)}</span>
             </div>
           ))}
         </div>
       </section>
-
-      {/* ── Trusted ── */}
-      {/* <section className={styles.trustSection}>
-        <div className={styles.dividerRow}>
-          <span className={styles.line} />
-          <h2 className={styles.trustTitle}>Trusted by Universities &amp; Companies</h2>
-          <span className={styles.line} />
-        </div>
-        <div className={styles.trustStats}>
-          {stats.map((s) => (
-            <div className={styles.statCard} key={s.label}>
-              <span className={styles.statIcon}>{s.icon}</span>
-              <span className={styles.statValue}>{s.value}</span>
-              <span className={styles.statLabel}>{s.label}</span>
-            </div>
-          ))}
-        </div>
-      </section> */}
 
     </main>
   );

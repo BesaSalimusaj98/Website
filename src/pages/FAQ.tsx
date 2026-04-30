@@ -2,49 +2,10 @@ import { useState } from "react";
 import universitiesHero from "../assets/universities-hero.png";
 import styles from "./FAQ.module.css";
 import PageHero from "../components/layout/PageHero";
+import { useTranslation } from "react-i18next";
 
 type FAQItem = { q: string; a: string };
-
-const general: FAQItem[] = [
-  {
-    q: "What is StazhLink?",
-    a: "StazhLink is an internship management platform that connects students, professors, companies, and university administrators into a centralized system to oversee and manage the full internship lifecycle.",
-  },
-  {
-    q: "How does the internship workflow work?",
-    a: "Students apply to internships, companies review applications, professors approve supervision requests, and administrators oversee the entire process all from one platform.",
-  },
-  {
-    q: "Can my university quickly integrate StazhLink?",
-    a: "Yes. StazhLink is designed for fast onboarding. Your admin team can set up departments, invite faculty, and start managing internships within days.",
-  },
-  {
-    q: "Is the platform secure and GDPR compliant?",
-    a: "Absolutely. StazhLink follows GDPR guidelines, encrypts all sensitive data, and provides role-based access control to protect student and institutional information.",
-  },
-  {
-    q: "How can I contact support?",
-    a: "You can reach our support team at info@stazhlink.com or use the live chat inside the platform. We typically respond within one business day.",
-  },
-  {
-    q: "Is StazhLink free for students?",
-    a: "Yes, students access StazhLink for free through their university. There are no fees for students to apply or track their internships.",
-  },
-];
-
-const forStudents: FAQItem[] = [
-  { q: "How do I find and apply for internships?", a: "Browse available listings from partner companies directly in your student dashboard and submit your application with one click." },
-  { q: "Do I need faculty supervision to apply to internships?", a: "Some internships require a professor to approve your supervision request before the company can proceed. Your university sets this policy." },
-  { q: "Can I track my internship application status?", a: "Yes, your dashboard shows real-time status updates for every application you've submitted." },
-  { q: "How do I download my internship completion certificate?", a: "Once your internship is marked complete by both the company and your professor, you can download your official certificate from your profile." },
-];
-
-const forCompanies: FAQItem[] = [
-  { q: "How can a company post internships?", a: "After registering your company, go to your dashboard and click 'Post Internship'. Fill in the details, requirements, and available spots." },
-  { q: "How does a company review and accept student applications?", a: "Applications appear in your dashboard as students apply. You can review documents, leave notes, and accept or reject with one click." },
-  { q: "Can we leave feedback on interns?", a: "Yes, at the end of the internship, companies can submit a structured feedback report which becomes part of the student's record." },
-  { q: "Are internship agreements generated automatically?", a: "Yes. Once all parties approve, StazhLink generates an official internship feedback that can be signed and downloaded by all stakeholders." },
-];
+type TabId = "general" | "students" | "companies";
 
 function Accordion({ items }: { items: FAQItem[] }) {
   const [open, setOpen] = useState<number | null>(0);
@@ -63,14 +24,18 @@ function Accordion({ items }: { items: FAQItem[] }) {
   );
 }
 
-const tabs = ["General Questions", "For Students", "For Companies"] as const;
-type Tab = typeof tabs[number];
+const tabIds: TabId[] = ["general", "students", "companies"];
 
 export default function FAQ() {
-  const [activeTab, setActiveTab] = useState<Tab>("General Questions");
+  const { t } = useTranslation();
+  const [activeTab, setActiveTab] = useState<TabId>("general");
   const [search, setSearch] = useState("");
 
-  const allItems = [...general, ...forStudents, ...forCompanies];
+  const general = Array.from({ length: 6 }, (_, i) => ({ q: t(`faq.general.${i}.q`), a: t(`faq.general.${i}.a`) }));
+  const students = Array.from({ length: 4 }, (_, i) => ({ q: t(`faq.students.${i}.q`), a: t(`faq.students.${i}.a`) }));
+  const companies = Array.from({ length: 4 }, (_, i) => ({ q: t(`faq.companies.${i}.q`), a: t(`faq.companies.${i}.a`) }));
+
+  const allItems = [...general, ...students, ...companies];
   const filtered = search.trim()
     ? allItems.filter(
         (i) =>
@@ -79,19 +44,15 @@ export default function FAQ() {
       )
     : null;
 
-  const tabItems: Record<Tab, FAQItem[]> = {
-    "General Questions": general,
-    "For Students": forStudents,
-    "For Companies": forCompanies,
-  };
+  const tabItems: Record<TabId, FAQItem[]> = { general, students, companies };
 
   return (
     <main className={styles.page}>
 
       {/* ── Hero ── */}
       <PageHero
-        title="Frequently Asked Questions"
-        subtitle="Find answers to common questions about StazhLink and how our internship management platform works."
+        title={t('faq.hero.title')}
+        subtitle={t('faq.hero.subtitle')}
         imgSrc={universitiesHero}
         imgAlt="FAQ illustration"
         leftExtra={
@@ -99,7 +60,7 @@ export default function FAQ() {
             <input
               className={styles.searchInput}
               type="text"
-              placeholder="Search for a question..."
+              placeholder={t('faq.hero.searchPlaceholder')}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -120,24 +81,24 @@ export default function FAQ() {
             /* Search results */
             <div>
               <p className={styles.searchResultLabel}>
-                {filtered.length} result{filtered.length !== 1 ? "s" : ""} for "{search}"
+                {t('faq.searchResult', { count: filtered.length, query: search })}
               </p>
               <Accordion items={filtered.length ? filtered : []} />
               {filtered.length === 0 && (
-                <p className={styles.noResults}>No questions matched your search.</p>
+                <p className={styles.noResults}>{t('faq.noResults')}</p>
               )}
             </div>
           ) : (
             <>
               {/* Tabs */}
               <div className={styles.tabs}>
-                {tabs.map((t) => (
+                {tabIds.map((id) => (
                   <button
-                    key={t}
-                    className={`${styles.tab} ${activeTab === t ? styles.tabActive : ""}`}
-                    onClick={() => setActiveTab(t)}
+                    key={id}
+                    className={`${styles.tab} ${activeTab === id ? styles.tabActive : ""}`}
+                    onClick={() => setActiveTab(id)}
                   >
-                    {t}
+                    {t(`faq.tabs.${id}`)}
                   </button>
                 ))}
               </div>

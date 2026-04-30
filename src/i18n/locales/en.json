@@ -1,0 +1,336 @@
+{
+  "navbar": {
+    "product": "Product",
+    "forUniversities": "For Universities",
+    "forCompanies": "For Companies",
+    "faq": "FAQ",
+    "about": "About",
+    "login": "Login",
+    "requestDemo": "Request Demo"
+  },
+  "footer": {
+    "cta": "Bring Structure to Your Internship Program",
+    "requestDemo": "Request Demo",
+    "getStarted": "Get Started Today",
+    "copyright": "© 2025 StazhLink. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "The Internship Management",
+      "titleLine2": "Platform for Universities",
+      "subtitle": "Connecting Students, Professors, Companies & Administrators in One Streamlined System.",
+      "primaryBtn": "Request Demo",
+      "secondaryBtn": "Go to Platform",
+      "mockupTitle": "Internship Application Progress"
+    },
+    "problem": {
+      "title": "Internship Processes are",
+      "titleStrong": "Broken...",
+      "studentsBold": "Students",
+      "studentsDesc": "are Lost in the Search",
+      "professorsBold": "Professors",
+      "professorsDesc": "Lack Oversight",
+      "companiesBold": "Companies",
+      "companiesDesc": "Can't Reach Students",
+      "adminsBold": "Admins",
+      "adminsDesc": "Have No Control",
+      "fixesTitle": "StazhLink Fixes This",
+      "fixesSub": "All-in-One Internship Management Solution",
+      "howTitle": "How It Works"
+    },
+    "steps": {
+      "0": "Find Internship",
+      "1": "Request Professor",
+      "2": "Company Approves",
+      "3": "Professor Approves",
+      "4": "Internship Completed"
+    },
+    "everyone": {
+      "title": "A Platform for Everyone",
+      "studentsLabel": "For Students",
+      "professorsLabel": "For Professors",
+      "companiesLabel": "For Companies",
+      "adminsLabel": "For Administrators",
+      "studentsAction": "Search, Apply, Track",
+      "professorsAction": "Supervise & Approve",
+      "companiesAction": "Post & Manage Interns",
+      "adminsAction": "Oversee & Report"
+    },
+    "features": {
+      "title": "Key Features of",
+      "titleAccent": "StazhLink",
+      "internshipListings": "Internship Listings",
+      "applicationTracking": "Application Tracking",
+      "professorSupervision": "Professor Supervision",
+      "automatedDocs": "Automated Docs",
+      "feedbackReporting": "Feedback & Reporting",
+      "roleBasedDashboards": "Role-Based Dashboards"
+    }
+  },
+  "forUniversities": {
+    "hero": {
+      "titleStrong1": "Streamline Internship",
+      "titleRest": " Management",
+      "titleLine2": "Across Your University",
+      "subtitle": "StazhLink empowers university administrators to oversee and manage internships from a central platform, ensuring seamless coordination and compliance.",
+      "primaryBtn": "Request Demo",
+      "secondaryBtn": "Start Free Trial"
+    },
+    "challenges": {
+      "sectionTitle": "Common",
+      "sectionStrong1": "Challenges",
+      "sectionRest": " Universities Face with",
+      "sectionStrong2": "Internships",
+      "c1": {
+        "title": "Lack of Oversight",
+        "i1": "Limited visibility into student internship progress",
+        "i2": "Difficult to track approvals across departments",
+        "i3": "Manual follow-up slows coordination"
+      },
+      "c2": {
+        "title": "Professor Supervision",
+        "i1": "Students need guidance to find suitable internships",
+        "i2": "Communication between students and professors is fragmented",
+        "i3": "Tracking progress and giving feedback takes too much manual work"
+      },
+      "c3": {
+        "title": "Internship Compliance",
+        "i1": "Internship requirements are handled manually",
+        "i2": "Missing documents can delay approvals",
+        "i3": "Keeping a clear record of each internship is difficult"
+      },
+      "c4": {
+        "title": "Analytics & Report",
+        "i1": "Reporting often depends on spreadsheets and manual updates",
+        "i2": "It is hard to monitor internship activity at scale",
+        "i3": "Universities lack clear insights into outcomes and feedback"
+      }
+    },
+    "dashboard": {
+      "title": "Centralized Dashboard for",
+      "titleStrong": "Full Oversight",
+      "f1bold": "View All Internship",
+      "f1rest": " Activity",
+      "f2bold": "Track Internship",
+      "f2rest": " Approvals",
+      "f3bold": "Manage Faculty",
+      "f3rest": " and Departments",
+      "f4bold": "Audit",
+      "f4mid": " and ",
+      "f4bold2": "Report",
+      "f4rest": " on Compliance"
+    },
+    "supervision": {
+      "titlePre": "Professor",
+      "titleStrong": "Supervision",
+      "titlePost": " Management",
+      "subtitle": "Increasing internship approvals blocking and processes for university Students.",
+      "requestsTitle": "Supervision Requests",
+      "requestsDesc": "Professors receive and evaluate student supervision requests directly in the platform.",
+      "workflowTitle": "Approval Workflow",
+      "workflowDesc": "Approve or reject internship applications with a structured step-by-step process.",
+      "monitoringTitle": "Progress Monitoring",
+      "monitoringDesc": "Track each intern's progress and ensure academic requirements are met."
+    }
+  },
+  "forCompanies": {
+    "hero": {
+      "titleStrong1": "Streamline",
+      "titleRest": " Your Internship",
+      "titleLine2Strong": "Recruitment",
+      "titleLine2Rest": " Process",
+      "subtitle": "Use StazhLink to connect with university students looking for internship opportunities. Manage applications easily and hire the best talent from top universities.",
+      "primaryBtn": "Register Company",
+      "secondaryBtn": "Start Free Trial"
+    },
+    "features": {
+      "titleStrong": "Dedicated Internship",
+      "titleRest": " Management Platform for",
+      "titleStrong2": "Companies",
+      "c1": {
+        "title": "Easy Internship Posting",
+        "i1": "Post internships with detailed descriptions and requirements",
+        "i2": "Receive applications from university students directly"
+      },
+      "c2": {
+        "title": "Smart Applicant Management",
+        "i1": "Review applications with all documents",
+        "i2": "Track internship progress and leave feedback"
+      },
+      "c3": {
+        "title": "Compliance & Documentation",
+        "i1": "Generate official internship feedback reports",
+        "i2": "Securely download completion feedback certificates"
+      }
+    },
+    "howItWorks": {
+      "titlePre": "How",
+      "titleStrong": "StazhLink",
+      "titleMid": " Works for",
+      "titleStrong2": "Companies",
+      "s1": {
+        "title": "Post Internships",
+        "i1": "Create and publish internship listings",
+        "i2": "Define qualifications and requirements"
+      },
+      "s2": {
+        "title": "Receive Applications",
+        "i1": "Review applications and documents",
+        "i2": "Filter and rank candidates easily"
+      },
+      "s3": {
+        "title": "Review & Select",
+        "i1": "Accept or reject applicants with one click",
+        "i2": "Message candidates directly within StazhLink"
+      },
+      "s4": {
+        "title": "Feedback & Reports",
+        "i1": "Monitor intern progress & provide feedback",
+        "i2": "Generate official PDF reports for completed internships"
+      }
+    }
+  },
+  "product": {
+    "hero": {
+      "titlePre": "Simplify",
+      "titleStrong": "Your University's",
+      "titlePost": " Internship Process",
+      "subtitle": "StazhLink helps universities, students, professors, and companies collaborate seamlessly through a structured internship approval workflow.",
+      "mockupTitle": "Internship Application Progress",
+      "workflowStrong": "Guided Workflow",
+      "workflowPost": " for Students",
+      "cl1": "Browse & Apply to Internships",
+      "cl2": "Request Professor Supervision",
+      "cl3": "Track Your Application Progress",
+      "cl4": "Receive Official Internship Docs",
+      "requestDemo": "Request Demo"
+    },
+    "roles": {
+      "title": "A Role-Based Platform for Seamless Collaboration",
+      "subtitle": "Custom dashboards provide the right tools and insights for each user type.",
+      "studentsLabel": "Students",
+      "studentsI1": "Search & filter internships",
+      "studentsI2": "Request professor supervision",
+      "studentsI3": "Apply & track application status",
+      "studentsI4": "Download completion certificates",
+      "companiesLabel": "Companies",
+      "companiesI1": "Post internship listings",
+      "companiesI2": "Review & manage student applications",
+      "companiesI3": "Leave feedback on interns",
+      "companiesI4": "Generate internship documents",
+      "professorsLabel": "Professors",
+      "professorsI1": "Receive & evaluate supervision requests",
+      "professorsI2": "Approve or reject internship applications",
+      "professorsI3": "Monitor intern progress",
+      "adminsLabel": "Administrators",
+      "adminsI1": "Manage faculties & departments",
+      "adminsI2": "Oversee all internship activity",
+      "adminsI3": "Ensure policy compliance",
+      "adminsI4": "Access detailed reports"
+    },
+    "dashboards": {
+      "title": "Tailored Dashboards for Each User Role",
+      "subtitle": "Custom dashboards provide the right tools and insights for each user type.",
+      "student": "Student",
+      "company": "Company",
+      "professor": "Professor",
+      "admin": "Admin",
+      "suffix": "Dashboard"
+    }
+  },
+  "about": {
+    "hero": {
+      "titleStrong1": "Empowering Universities",
+      "titleRest": " Through",
+      "titleLine2Strong": "Streamlined Internship",
+      "titleLine2Rest": " Management",
+      "subtitle": "Our mission is to centralize and simplify the internship process, bridging academia and industry for the benefit of students, professors, and companies.",
+      "primaryBtn": "Our Story",
+      "secondaryBtn": "Start Free Trial"
+    },
+    "story": {
+      "title": "Our Story",
+      "text": "StazhLink was founded to solve a pressing issue faced by universities worldwide: fragmented, time-consuming, and manual internship processes. We saw that students often struggled to find internships, professors had limited oversight, and companies had no dedicated channel to reach university talent. We created StazhLink as a solution, a comprehensive platform that brings all stakeholders under one system, ensuring a structured, transparent, and efficient internship process from start to finish."
+    },
+    "mission": {
+      "title": "Our Mission and Vision",
+      "missionTitle": "Our Mission",
+      "missionPre": "To simplify and unify the internship management process for universities by providing a platform where ",
+      "missionStudents": "students",
+      "missionComma": ", ",
+      "missionProfessors": "professors",
+      "missionAnd": " and ",
+      "missionCompanies": "companies",
+      "missionPost": " can collaborate seamlessly.",
+      "visionTitle": "Our Vision",
+      "visionText": "To be the leading platform that bridges the gap between academia and industry, supporting career development for students through meaningful, structured internship experiences."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Get in touch with us for any questions or to learn more about StazhLink."
+    },
+    "form": {
+      "sectionTitle": "Send Us a Message",
+      "sectionSub": "Fill out the form below and our team will get back to you as soon as possible.",
+      "cardTitle": "Send Us a Message",
+      "cardSub": "Fill out the form below and our team will get back to you as soon as possible.",
+      "name": "Name",
+      "email": "Email",
+      "organization": "Organization (optional)",
+      "phone": "Phone (optional)",
+      "message": "Message",
+      "privacy": "We'll never share your information.",
+      "submit": "Submit",
+      "sending": "Sending…",
+      "successTitle": "Message sent!",
+      "successText": "We'll be in touch shortly.",
+      "error": "Something went wrong. Please try again or email us directly."
+    },
+    "getInTouch": {
+      "title": "Get in Touch",
+      "emailLabel": "Email",
+      "emailNote": "Reach out to us via email for any inquiries.",
+      "addressLabel": "Address",
+      "addressVal": "Tirana, Albania"
+    }
+  },
+  "faq": {
+    "hero": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find answers to common questions about StazhLink and how our internship management platform works.",
+      "searchPlaceholder": "Search for a question..."
+    },
+    "tabs": {
+      "general": "General Questions",
+      "students": "For Students",
+      "companies": "For Companies"
+    },
+    "searchResult_one": "{{count}} result for \"{{query}}\"",
+    "searchResult_other": "{{count}} results for \"{{query}}\"",
+    "noResults": "No questions matched your search.",
+    "general": {
+      "0": { "q": "What is StazhLink?", "a": "StazhLink is an internship management platform that connects students, professors, companies, and university administrators into a centralized system to oversee and manage the full internship lifecycle." },
+      "1": { "q": "How does the internship workflow work?", "a": "Students apply to internships, companies review applications, professors approve supervision requests, and administrators oversee the entire process all from one platform." },
+      "2": { "q": "Can my university quickly integrate StazhLink?", "a": "Yes. StazhLink is designed for fast onboarding. Your admin team can set up departments, invite faculty, and start managing internships within days." },
+      "3": { "q": "Is the platform secure and GDPR compliant?", "a": "Absolutely. StazhLink follows GDPR guidelines, encrypts all sensitive data, and provides role-based access control to protect student and institutional information." },
+      "4": { "q": "How can I contact support?", "a": "You can reach our support team at info@stazhlink.com or use the live chat inside the platform. We typically respond within one business day." },
+      "5": { "q": "Is StazhLink free for students?", "a": "Yes, students access StazhLink for free through their university. There are no fees for students to apply or track their internships." }
+    },
+    "students": {
+      "0": { "q": "How do I find and apply for internships?", "a": "Browse available listings from partner companies directly in your student dashboard and submit your application with one click." },
+      "1": { "q": "Do I need faculty supervision to apply to internships?", "a": "Some internships require a professor to approve your supervision request before the company can proceed. Your university sets this policy." },
+      "2": { "q": "Can I track my internship application status?", "a": "Yes, your dashboard shows real-time status updates for every application you've submitted." },
+      "3": { "q": "How do I download my internship completion certificate?", "a": "Once your internship is marked complete by both the company and your professor, you can download your official certificate from your profile." }
+    },
+    "companies": {
+      "0": { "q": "How can a company post internships?", "a": "After registering your company, go to your dashboard and click 'Post Internship'. Fill in the details, requirements, and available spots." },
+      "1": { "q": "How does a company review and accept student applications?", "a": "Applications appear in your dashboard as students apply. You can review documents, leave notes, and accept or reject with one click." },
+      "2": { "q": "Can we leave feedback on interns?", "a": "Yes, at the end of the internship, companies can submit a structured feedback report which becomes part of the student's record." },
+      "3": { "q": "Are internship agreements generated automatically?", "a": "Yes. Once all parties approve, StazhLink generates an official internship feedback that can be signed and downloaded by all stakeholders." }
+    }
+  }
+}

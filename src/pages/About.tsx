@@ -2,6 +2,7 @@ import aboutheropage from "../assets/Diskutime biznesi dhe teknologjia.png";
 import aboutStory from "../assets/Menaxhimi i praktikave të stazhit.png";
 import styles from "./About.module.css";
 import PageHero from "../components/layout/PageHero";
+import { useTranslation } from "react-i18next";
 import { STAZHLINK_APP_URL } from "../constants/links";
 
 /* Placeholder avatar SVGs until real photos are added */
@@ -22,17 +23,18 @@ const team = [
 ];
 
 export default function About() {
+  const { t } = useTranslation();
   return (
     <main className={styles.page}>
 
       {/* ── Section 1: Hero ── */}
       <PageHero
-        title={<><strong>Empowering Universities</strong> Through<br /><strong>Streamlined Internship</strong> Management</>}
-        subtitle="Our mission is to centralize and simplify the internship process, bridging academia and industry for the benefit of students, professors, and companies."
+        title={<><strong>{t('about.hero.titleStrong1')}</strong>{t('about.hero.titleRest')}<br /><strong>{t('about.hero.titleLine2Strong')}</strong>{t('about.hero.titleLine2Rest')}</>}
+        subtitle={t('about.hero.subtitle')}
         imgSrc={aboutheropage}
         imgAlt="StazhLink platform"
-        primaryBtn={{ label: "Our Story", href: "#story" }}
-        secondaryBtn={{ label: "Start Free Trial", href: STAZHLINK_APP_URL, target: "_blank", rel: "noopener noreferrer" }}
+        primaryBtn={{ label: t('about.hero.primaryBtn'), href: "#story" }}
+        secondaryBtn={{ label: t('about.hero.secondaryBtn'), href: STAZHLINK_APP_URL, target: "_blank", rel: "noopener noreferrer" }}
         waveColor="#fff"
       />
 
@@ -40,18 +42,8 @@ export default function About() {
       <section className={styles.story} id="story">
         <div className={styles.storyInner}>
           <div className={styles.storyLeft}>
-            <h2 className={styles.storyTitle}>Our Story</h2>
-            <p className={styles.storyText}>
-              StazhLink was founded to solve a pressing issue faced by
-              universities worldwide: fragmented, time-consuming, and
-              manual internship processes. We saw that students often
-              struggled to find internships, professors had limited oversight,
-              and companies had no dedicated channel to reach university
-              talent. We created StazhLink as a solution, a
-              comprehensive platform that brings all stakeholders under
-              one system, ensuring a structured, transparent, and efficient
-              internship process from start to finish.
-            </p>
+            <h2 className={styles.storyTitle}>{t('about.story.title')}</h2>
+            <p className={styles.storyText}>{t('about.story.text')}</p>
           </div>
           <div className={styles.storyRight}>
             <img src={aboutStory} alt="Our story" className={styles.storyImg} />
@@ -61,7 +53,7 @@ export default function About() {
 
       {/* ── Section 3: Mission & Vision ── */}
       <section className={styles.mission}>
-        <h2 className={styles.sectionTitle}>Our Mission and Vision</h2>
+        <h2 className={styles.sectionTitle}>{t('about.mission.title')}</h2>
         <div className={styles.missionGrid}>
           <div className={styles.missionCard}>
             <div className={styles.missionIcon}>
@@ -72,12 +64,9 @@ export default function About() {
                 <path d="M22 8v4M22 32v4M8 22h4M32 22h4" stroke="#f46b1b" strokeWidth="2" strokeLinecap="round" />
               </svg>
             </div>
-            <h3 className={styles.missionCardTitle}>Our Mission</h3>
+            <h3 className={styles.missionCardTitle}>{t('about.mission.missionTitle')}</h3>
             <p className={styles.missionCardText}>
-              To simplify and unify the internship management
-              process for universities by providing a platform
-              where <strong>students</strong>, <strong>professors</strong> and <strong>companies</strong> can
-              collaborate seamlessly.
+              {t('about.mission.missionPre')}<strong>{t('about.mission.missionStudents')}</strong>{t('about.mission.missionComma')}<strong>{t('about.mission.missionProfessors')}</strong>{t('about.mission.missionAnd')}<strong>{t('about.mission.missionCompanies')}</strong>{t('about.mission.missionPost')}
             </p>
           </div>
           <div className={styles.missionCard}>
@@ -89,35 +78,11 @@ export default function About() {
                 <path d="M22 11V8M15 14l-2-2M29 14l2-2" stroke="#2563eb" strokeWidth="1.8" strokeLinecap="round" />
               </svg>
             </div>
-            <h3 className={styles.missionCardTitle}>Our Vision</h3>
-            <p className={styles.missionCardText}>
-              To be the leading platform that bridges the gap
-              between academia and industry, supporting career
-              development for students through meaningful,
-              structured internship experiences.
-            </p>
+            <h3 className={styles.missionCardTitle}>{t('about.mission.visionTitle')}</h3>
+            <p className={styles.missionCardText}>{t('about.mission.visionText')}</p>
           </div>
         </div>
       </section>
-
-      {/* ── Section 4: Team ── */}
-      {/* <section className={styles.team}>
-        <h2 className={styles.sectionTitle}>Meet Our Team</h2>
-        <p className={styles.sectionSub}>
-          The team behind StazhLink is a dedicated group of professionals passionate about education and technology.
-        </p>
-        <div className={styles.teamGrid}>
-          {team.map((member) => (
-            <div key={member.name} className={styles.teamCard}>
-              <div className={styles.teamAvatar}>
-                <Avatar initials={member.initials} bg={member.bg} />
-              </div>
-              <strong className={styles.teamName}>{member.name}</strong>
-              <span className={styles.teamRole}>{member.role}</span>
-            </div>
-          ))}
-        </div>
-      </section> */}
 
     </main>
   );

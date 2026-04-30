@@ -146,44 +146,6 @@ export default function FAQ() {
             </>
           )}
 
-          {/* Bottom 2-col summary */}
-          {!filtered && (
-            <div className={styles.summaryGrid}>
-              <div className={styles.summaryCard}>
-                <div className={styles.summaryCardHeader}>
-                  <strong>Questions for Students</strong>
-                  <span className={styles.summaryPlus}>+</span>
-                </div>
-                <ul className={styles.summaryList}>
-                  {forStudents.slice(0, 3).map((i) => (
-                    <li key={i.q}>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                        <path d="M2.5 7.5l3.5 3.5 6-7" stroke="#10b981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                      {i.q}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className={styles.summaryCard}>
-                <div className={styles.summaryCardHeader}>
-                  <strong>Questions for Companies</strong>
-                  <span className={styles.summaryPlus}>+</span>
-                </div>
-                <ul className={styles.summaryList}>
-                  {forCompanies.slice(0, 2).map((i) => (
-                    <li key={i.q}>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                        <path d="M2.5 7.5l3.5 3.5 6-7" stroke="#10b981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                      {i.q}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          )}
-
         </div>
       </section>
 

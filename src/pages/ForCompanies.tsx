@@ -2,6 +2,7 @@ import companiesHero from "../assets/companies-hero.png";
 import styles from "./ForCompanies.module.css";
 import PageHero from "../components/layout/PageHero";
 import { STAZHLINK_APP_URL, STAZHLINK_LOGIN_URL } from "../constants/links";
+import { useTranslation } from "react-i18next";
 
 /* ── Feature icons ── */
 const PostingIcon = () => (
@@ -73,52 +74,31 @@ const features = [
   },
 ];
 
-const steps = [
-  {
-    num: "1",
-    bg: "#1a3a6e",
-    title: "Post Internships",
-    items: ["Create and publish internship listings", "Define qualifications and requirements"],
-  },
-  {
-    num: "2",
-    bg: "#2563eb",
-    title: "Receive Applications",
-    items: ["Review applications and documents", "Filter and rank candidates easily"],
-  },
-  {
-    num: "3",
-    bg: "#10b981",
-    title: "Review & Select",
-    items: ["Accept or reject applicants with one click", "Message candidates directly within StazhLink"],
-  },
-  {
-    num: "4",
-    bg: "#f46b1b",
-    title: "Feedback & Reports",
-    items: ["Monitor intern progress & provide feedback", "Generate official PDF reports for completed internships"],
-  },
-];
+  const steps = [
+    { num: "1", bg: "#1a3a6e", titleKey: "forCompanies.howItWorks.s1.title", items: [t('forCompanies.howItWorks.s1.i1'), t('forCompanies.howItWorks.s1.i2')] },
+    { num: "2", bg: "#2563eb", titleKey: "forCompanies.howItWorks.s2.title", items: [t('forCompanies.howItWorks.s2.i1'), t('forCompanies.howItWorks.s2.i2')] },
+    { num: "3", bg: "#10b981", titleKey: "forCompanies.howItWorks.s3.title", items: [t('forCompanies.howItWorks.s3.i1'), t('forCompanies.howItWorks.s3.i2')] },
+    { num: "4", bg: "#f46b1b", titleKey: "forCompanies.howItWorks.s4.title", items: [t('forCompanies.howItWorks.s4.i1'), t('forCompanies.howItWorks.s4.i2')] },
+  ];
 
-export default function ForCompanies() {
   return (
     <main className={styles.page}>
 
       {/* ── Section 1: Hero ── */}
       <PageHero
-        title={<><strong>Streamline</strong> Your Internship<br /><strong>Recruitment</strong> Process</>}
-        subtitle="Use StazhLink to connect with university students looking for internship opportunities. Manage applications easily and hire the best talent from top universities."
+        title={<><strong>{t('forCompanies.hero.titleStrong1')}</strong>{t('forCompanies.hero.titleRest')}<br /><strong>{t('forCompanies.hero.titleLine2Strong')}</strong>{t('forCompanies.hero.titleLine2Rest')}</>}
+        subtitle={t('forCompanies.hero.subtitle')}
         imgSrc={companiesHero}
         imgAlt="Company internship recruitment"
-        primaryBtn={{ label: "Register Company", href: STAZHLINK_LOGIN_URL, target: "_blank", rel: "noopener noreferrer" }}
-        secondaryBtn={{ label: "Start Free Trial", href: STAZHLINK_APP_URL, target: "_blank", rel: "noopener noreferrer" }}
+        primaryBtn={{ label: t('forCompanies.hero.primaryBtn'), href: STAZHLINK_LOGIN_URL, target: "_blank", rel: "noopener noreferrer" }}
+        secondaryBtn={{ label: t('forCompanies.hero.secondaryBtn'), href: STAZHLINK_APP_URL, target: "_blank", rel: "noopener noreferrer" }}
         waveColor="#f0f4fa"
       />
 
       {/* ── Section 2: Features ── */}
       <section className={styles.features}>
         <h2 className={styles.sectionTitle}>
-          <strong>Dedicated Internship</strong> Management Platform for <strong>Companies</strong>
+          <strong>{t('forCompanies.features.titleStrong')}</strong>{t('forCompanies.features.titleRest')}<strong>{t('forCompanies.features.titleStrong2')}</strong>
         </h2>
 
         <div className={styles.featureGrid}>
@@ -127,10 +107,7 @@ export default function ForCompanies() {
               <div className={styles.featureIcon}><f.Icon /></div>
               <div className={styles.featureHeading}>
                 <span className={styles.featureNum} style={{ background: f.numColor }}>{f.num}</span>
-                <strong>{f.titleStrong}</strong>
-                {f.title !== f.titleStrong && (
-                  <span> {f.title.replace(f.titleStrong, "").trim()}</span>
-                )}
+                <strong>{t(f.boldKey)}</strong>
               </div>
               <ul className={styles.featureList}>
                 {f.items.map((item) => (
@@ -147,37 +124,17 @@ export default function ForCompanies() {
         </div>
       </section>
 
-      {/* ── Section 3: University Partners ──
-      <section className={styles.universities}>
-        <h2 className={styles.sectionTitle}>
-          <strong>Access Talent</strong> from Leading Universities
-        </h2>
-        <p className={styles.sectionSub}>
-          Find motivated, job-ready university students eager to gain real-world experience.
-        </p>
-        <div className={styles.uniGrid}>
-          {universities.map((u, i) => (
-            <div key={i} className={styles.uniCard}>
-              <div className={styles.uniLogo} style={{ background: u.color }}>
-                {u.abbr}
-              </div>
-              <span>{u.name}</span>
-            </div>
-          ))}
-        </div>
-      </section> */}
-
       {/* ── Section 4: How It Works ── */}
       <section className={styles.howItWorks}>
         <h2 className={styles.sectionTitle}>
-          How <strong>StazhLink</strong> Works for <strong>Companies</strong>
+          {t('forCompanies.howItWorks.titlePre')}<strong>{t('forCompanies.howItWorks.titleStrong')}</strong>{t('forCompanies.howItWorks.titleMid')}<strong>{t('forCompanies.howItWorks.titleStrong2')}</strong>
         </h2>
 
         <div className={styles.stepsGrid}>
           {steps.map((s) => (
             <div key={s.num} className={styles.stepCard}>
               <div className={styles.stepNum} style={{ background: s.bg }}>{s.num}</div>
-              <strong className={styles.stepTitle}>{s.title}</strong>
+              <strong className={styles.stepTitle}>{t(s.titleKey)}</strong>
               <ul className={styles.stepList}>
                 {s.items.map((item) => (
                   <li key={item}>

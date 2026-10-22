@@ -1,0 +1,336 @@
+{
+  "navbar": {
+    "product": "Produkti",
+    "forUniversities": "Për Universitetet",
+    "forCompanies": "Për Kompanitë",
+    "faq": "FAQ",
+    "about": "Rreth nesh",
+    "login": "Hyrje",
+    "requestDemo": "Kërko Demo"
+  },
+  "footer": {
+    "cta": "Jepini Strukturë Programit tuaj të Praktikave",
+    "requestDemo": "Kërko Demo",
+    "getStarted": "Fillo Sot",
+    "copyright": "© 2025 StazhLink. Të gjitha të drejtat e rezervuara.",
+    "privacyPolicy": "Politika e Privatësisë",
+    "terms": "Kushtet & Rregullat"
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "Platforma e Menaxhimit të Praktikave",
+      "titleLine2": "për Universitetet",
+      "subtitle": "Lidhja e Studentëve, Profesorëve, Kompanive dhe Administratorëve në Një Sistem të Unifikuar.",
+      "primaryBtn": "Kërko Demo",
+      "secondaryBtn": "Shko te Platforma",
+      "mockupTitle": "Progresi i Aplikimeve për Praktikë"
+    },
+    "problem": {
+      "title": "Proceset e Praktikës janë",
+      "titleStrong": "të Thyera...",
+      "studentsBold": "Studentët",
+      "studentsDesc": "janë të Humbur në Kërkim",
+      "professorsBold": "Profesorët",
+      "professorsDesc": "Mungon Mbikëqyrja",
+      "companiesBold": "Kompanitë",
+      "companiesDesc": "Nuk Arrijnë Studentët",
+      "adminsBold": "Adminët",
+      "adminsDesc": "Nuk Kanë Kontroll",
+      "fixesTitle": "StazhLink e Zgjidh Këtë",
+      "fixesSub": "Zgjidhja Gjithëpërfshirëse për Menaxhimin e Praktikave",
+      "howTitle": "Si Funksionon"
+    },
+    "steps": {
+      "0": "Gjej Praktikën",
+      "1": "Kërko Profesor",
+      "2": "Kompania Miraton",
+      "3": "Profesori Miraton",
+      "4": "Praktika Përfundoi"
+    },
+    "everyone": {
+      "title": "Një Platformë për të Gjithë",
+      "studentsLabel": "Për Studentët",
+      "professorsLabel": "Për Profesorët",
+      "companiesLabel": "Për Kompanitë",
+      "adminsLabel": "Për Administratorët",
+      "studentsAction": "Kërko, Apliko, Gjurmo",
+      "professorsAction": "Mbikëqyr dhe Mirато",
+      "companiesAction": "Posto dhe Menaxho Stazhierët",
+      "adminsAction": "Mbikëqyr dhe Raporto"
+    },
+    "features": {
+      "title": "Veçoritë Kryesore të",
+      "titleAccent": "StazhLink",
+      "internshipListings": "Listimet e Praktikave",
+      "applicationTracking": "Gjurmimi i Aplikimeve",
+      "professorSupervision": "Mbikëqyrja e Profesorit",
+      "automatedDocs": "Dokumentet Automatike",
+      "feedbackReporting": "Vlerësimi dhe Raportimet",
+      "roleBasedDashboards": "Panele Bazuar në Role"
+    }
+  },
+  "forUniversities": {
+    "hero": {
+      "titleStrong1": "Thjeshto Menaxhimin e Praktikave",
+      "titleRest": "",
+      "titleLine2": "në Universitetin Tuaj",
+      "subtitle": "StazhLink fuqizon administratorët e universiteteve të mbikëqyrin dhe menaxhojnë praktikën nga një platformë qendrore, duke siguruar koordinim dhe pajtueshmëri të pandërprerë.",
+      "primaryBtn": "Kërko Demo",
+      "secondaryBtn": "Fillo Provën Falas"
+    },
+    "challenges": {
+      "sectionTitle": "Sfidat",
+      "sectionStrong1": "e Zakonshme",
+      "sectionRest": " me të Cilat Ballafaqohen Universitetet me",
+      "sectionStrong2": "Praktikën",
+      "c1": {
+        "title": "Mungesa e Mbikëqyrjes",
+        "i1": "Dukshmëri e kufizuar në progresin e praktikës studentore",
+        "i2": "Vështirësi në gjurmimin e miratimeve nëpër departamente",
+        "i3": "Ndjekja manuale ngadalëson koordinimin"
+      },
+      "c2": {
+        "title": "Mbikëqyrja e Profesorëve",
+        "i1": "Studentët kanë nevojë për udhëzim për të gjetur praktika të përshtatshme",
+        "i2": "Komunikimi midis studentëve dhe profesorëve është i fragmentuar",
+        "i3": "Gjurmimi i progresit dhe dhënia e vlerësimit kërkon shumë punë manuale"
+      },
+      "c3": {
+        "title": "Pajtueshmëria e Praktikës",
+        "i1": "Kërkesat e praktikës trajtohen manualisht",
+        "i2": "Dokumentet e munguara mund të vonojnë miratimet",
+        "i3": "Mbajtja e një rekordi të qartë për secilën praktikë është e vështirë"
+      },
+      "c4": {
+        "title": "Analitika dhe Raportet",
+        "i1": "Raportimet shpesh mbështeten në fletëllogaritëse dhe përditësime manuale",
+        "i2": "Është e vështirë të monitorosh aktivitetin e praktikës në shkallë",
+        "i3": "Universitetet mungojnë njohuri të qarta mbi rezultatet dhe vlerësimet"
+      }
+    },
+    "dashboard": {
+      "title": "Paneli i Centralizuar për",
+      "titleStrong": "Mbikëqyrje të Plotë",
+      "f1bold": "Shiko të Gjithë Aktivitetin",
+      "f1rest": " e Praktikës",
+      "f2bold": "Gjurmo",
+      "f2rest": " Miratimet e Praktikës",
+      "f3bold": "Menaxho Stafin Akademik",
+      "f3rest": " dhe Departamentet",
+      "f4bold": "Audito",
+      "f4mid": " dhe ",
+      "f4bold2": "Raporto",
+      "f4rest": " mbi Pajtueshmërinë"
+    },
+    "supervision": {
+      "titlePre": "Menaxhimi i",
+      "titleStrong": "Mbikëqyrjes",
+      "titlePost": " nga Profesorët",
+      "subtitle": "Rritja e proceseve të miratimit të praktikave për studentët e universiteteve.",
+      "requestsTitle": "Kërkesat për Mbikëqyrje",
+      "requestsDesc": "Profesorët marrin dhe vlerësojnë kërkesat e mbikëqyrjes studentore direkt në platformë.",
+      "workflowTitle": "Procesi i Miratimit",
+      "workflowDesc": "Mirато ose refuzo aplikimet e praktikës me një proces të strukturuar hap pas hapi.",
+      "monitoringTitle": "Monitorimi i Progresit",
+      "monitoringDesc": "Gjurmo progresin e çdo stazhieri dhe siguro që kërkesat akademike të jenë plotësuar."
+    }
+  },
+  "forCompanies": {
+    "hero": {
+      "titleStrong1": "Thjeshto",
+      "titleRest": " Procesin e",
+      "titleLine2Strong": "Rekrutimit",
+      "titleLine2Rest": " të Praktikave",
+      "subtitle": "Përdor StazhLink për t'u lidhur me studentë universitarë që kërkojnë mundësi praktike. Menaxho aplikimet lehtësisht dhe rekruto talentet më të mira nga universitetet kryesore.",
+      "primaryBtn": "Regjistro Kompaninë",
+      "secondaryBtn": "Fillo Provën Falas"
+    },
+    "features": {
+      "titleStrong": "Platformë e Dedikuar",
+      "titleRest": " e Menaxhimit të Praktikave për",
+      "titleStrong2": "Kompanitë",
+      "c1": {
+        "title": "Postim i Lehtë i Praktikave",
+        "i1": "Posto praktika me përshkrime dhe kërkesa të detajuara",
+        "i2": "Merr aplikimet direkt nga studentët universitar"
+      },
+      "c2": {
+        "title": "Menaxhim i Zgjuar i Kandidatëve",
+        "i1": "Shqyrto aplikimet me të gjitha dokumentet",
+        "i2": "Gjurmo progresin e praktikës dhe lër vlerësime"
+      },
+      "c3": {
+        "title": "Pajtueshmëria dhe Dokumentacioni",
+        "i1": "Gjenero raporte zyrtare vlerësimi të praktikës",
+        "i2": "Shkarko me siguri certifikatat e përfundimit të praktikës"
+      }
+    },
+    "howItWorks": {
+      "titlePre": "Si",
+      "titleStrong": "StazhLink",
+      "titleMid": " Funksionon për",
+      "titleStrong2": "Kompanitë",
+      "s1": {
+        "title": "Posto Praktikat",
+        "i1": "Krijo dhe publiko listime praktike",
+        "i2": "Përcakto kualifikimet dhe kërkesat"
+      },
+      "s2": {
+        "title": "Merr Aplikimet",
+        "i1": "Shqyrto aplikimet dhe dokumentet",
+        "i2": "Filtro dhe rendit lehtësisht kandidatët"
+      },
+      "s3": {
+        "title": "Shqyrto dhe Selekto",
+        "i1": "Prано ose refuzo aplikantët me një klik",
+        "i2": "Dërgo mesazhe direkt kandidatëve brenda StazhLink"
+      },
+      "s4": {
+        "title": "Vlerësimet dhe Raportet",
+        "i1": "Monitoro progresin e stazhierëve dhe jep vlerësime",
+        "i2": "Gjenero raporte zyrtare PDF për praktikën e përfunduar"
+      }
+    }
+  },
+  "product": {
+    "hero": {
+      "titlePre": "Thjeshto",
+      "titleStrong": "Procesin e Praktikës",
+      "titlePost": " të Universitetit tuaj",
+      "subtitle": "StazhLink ndihmon universitetet, studentët, profesorët dhe kompanitë të bashkëpunojnë në mënyrë të pandërprerë nëpërmjet një procesi strukturuar miratimi të praktikës.",
+      "mockupTitle": "Progresi i Aplikimeve për Praktikë",
+      "workflowStrong": "Procesi i Udhëhequr",
+      "workflowPost": " për Studentët",
+      "cl1": "Shfleto dhe Apliko për Praktika",
+      "cl2": "Kërko Mbikëqyrje Profesori",
+      "cl3": "Gjurmo Progresin e Aplikimit tënd",
+      "cl4": "Merr Dokumentet Zyrtare të Praktikës",
+      "requestDemo": "Kërko Demo"
+    },
+    "roles": {
+      "title": "Një Platformë Bazuar në Role për Bashkëpunim të Pandërprerë",
+      "subtitle": "Panele të personalizuara ofrojnë mjetet dhe njohuritë e duhura për çdo lloj përdoruesi.",
+      "studentsLabel": "Studentët",
+      "studentsI1": "Kërko dhe filtro praktika",
+      "studentsI2": "Kërko mbikëqyrje profesori",
+      "studentsI3": "Apliko dhe gjurmo statusin e aplikimit",
+      "studentsI4": "Shkarko certifikatat e përfundimit",
+      "companiesLabel": "Kompanitë",
+      "companiesI1": "Posto listingje praktike",
+      "companiesI2": "Shqyrto dhe menaxho aplikimet studentore",
+      "companiesI3": "Lër vlerësime mbi stazhierët",
+      "companiesI4": "Gjenero dokumentet e praktikës",
+      "professorsLabel": "Profesorët",
+      "professorsI1": "Merr dhe vlerëso kërkesat e mbikëqyrjes",
+      "professorsI2": "Mirато ose refuzo aplikimet e praktikës",
+      "professorsI3": "Monitoro progresin e stazhierëve",
+      "adminsLabel": "Administratorët",
+      "adminsI1": "Menaxho fakultetet dhe departamentet",
+      "adminsI2": "Mbikëqyr gjithë aktivitetin e praktikës",
+      "adminsI3": "Siguro pajtueshmërinë e politikave",
+      "adminsI4": "Akseso raporte të detajuara"
+    },
+    "dashboards": {
+      "title": "Panele të Përshtatura për Çdo Rol Përdoruesi",
+      "subtitle": "Panele të personalizuara ofrojnë mjetet dhe njohuritë e duhura për çdo lloj përdoruesi.",
+      "student": "Student",
+      "company": "Kompania",
+      "professor": "Profesor",
+      "admin": "Admin",
+      "suffix": "Panel"
+    }
+  },
+  "about": {
+    "hero": {
+      "titleStrong1": "Fuqizimi i Universiteteve",
+      "titleRest": " Nëpërmjet",
+      "titleLine2Strong": "Menaxhimit të Optimizuar",
+      "titleLine2Rest": " të Praktikave",
+      "subtitle": "Misioni ynë është të centralizojmë dhe thjeshtojmë procesin e praktikës, duke lidhur botën akademike me industrinë për të mirën e studentëve, profesorëve dhe kompanive.",
+      "primaryBtn": "Historia Jonë",
+      "secondaryBtn": "Fillo Provën Falas"
+    },
+    "story": {
+      "title": "Historia Jonë",
+      "text": "StazhLink u themelua për të zgjidhur një problem urgjent me të cilin ballafaqohen universitetet në mbarë botën: procese të fragmentuara, që marrin shumë kohë dhe manuale të praktikës. Vumë re se studentët shpesh vështirësonin gjetjen e praktikave, profesorët kishin mbikëqyrje të kufizuar dhe kompanitë nuk kishin kanal të dedikuar për të arritur talentet universitare. Krijuam StazhLink si zgjidhje, një platformë gjithëpërfshirëse që bashkon të gjitha palët nën një sistem, duke siguruar një proces praktike strukturuar, transparent dhe efikas nga fillimi deri në fund."
+    },
+    "mission": {
+      "title": "Misioni dhe Vizioni Ynë",
+      "missionTitle": "Misioni Ynë",
+      "missionPre": "Të thjeshtojmë dhe unifikojmë procesin e menaxhimit të praktikave për universitetet duke ofruar një platformë ku ",
+      "missionStudents": "studentët",
+      "missionComma": ", ",
+      "missionProfessors": "profesorët",
+      "missionAnd": " dhe ",
+      "missionCompanies": "kompanitë",
+      "missionPost": " mund të bashkëpunojnë pa probleme.",
+      "visionTitle": "Vizioni Ynë",
+      "visionText": "Të jemi platforma kryesore që mbyll hendekun midis botës akademike dhe industrisë, duke mbështetur zhvillimin e karrierës për studentët nëpërmjet përvojave kuptimplote dhe të strukturuara të praktikës."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Na Kontaktoni",
+      "subtitle": "Na kontaktoni për çdo pyetje ose për të mësuar më shumë rreth StazhLink."
+    },
+    "form": {
+      "sectionTitle": "Na Dërgoni një Mesazh",
+      "sectionSub": "Plotëso formularin më poshtë dhe ekipi ynë do t'ju kthehet sa më shpejt të jetë e mundur.",
+      "cardTitle": "Na Dërgoni një Mesazh",
+      "cardSub": "Plotëso formularin më poshtë dhe ekipi ynë do t'ju kthehet sa më shpejt të jetë e mundur.",
+      "name": "Emri",
+      "email": "E-mail",
+      "organization": "Organizata (opsionale)",
+      "phone": "Telefoni (opsional)",
+      "message": "Mesazhi",
+      "privacy": "Nuk do t'i ndajmë kurrë informacionet tuaja.",
+      "submit": "Dërgo",
+      "sending": "Duke dërguar…",
+      "successTitle": "Mesazhi u dërgua!",
+      "successText": "Do t'ju kontaktojmë së shpejti.",
+      "error": "Diçka shkoi keq. Ju lutemi provoni përsëri ose na dërgoni email direkt."
+    },
+    "getInTouch": {
+      "title": "Na Kontaktoni",
+      "emailLabel": "E-mail",
+      "emailNote": "Na kontaktoni me email për çdo pyetje.",
+      "addressLabel": "Adresa",
+      "addressVal": "Tiranë, Shqipëri"
+    }
+  },
+  "faq": {
+    "hero": {
+      "title": "Pyetjet e Shpeshta",
+      "subtitle": "Gjeni përgjigje për pyetjet e zakonshme rreth StazhLink dhe mënyrës si funksionon platforma jonë e menaxhimit të praktikave.",
+      "searchPlaceholder": "Kërko një pyetje..."
+    },
+    "tabs": {
+      "general": "Pyetje të Përgjithshme",
+      "students": "Për Studentët",
+      "companies": "Për Kompanitë"
+    },
+    "searchResult_one": "{{count}} rezultat për «{{query}}»",
+    "searchResult_other": "{{count}} rezultate për «{{query}}»",
+    "noResults": "Asnjë pyetje nuk përputhet me kërkimin tuaj.",
+    "general": {
+      "0": { "q": "Çfarë është StazhLink?", "a": "StazhLink është një platformë menaxhimi praktikash që lidh studentët, profesorët, kompanitë dhe administratorët universitar në një sistem të centralizuar për të mbikëqyrur dhe menaxhuar gjithë ciklin e praktikës." },
+      "1": { "q": "Si funksionon procesi i praktikës?", "a": "Studentët aplikojnë për praktika, kompanitë shqyrtojnë aplikimet, profesorët miratojnë kërkesat e mbikëqyrjes dhe administratorët mbikëqyrin të gjithë procesin nga një platformë." },
+      "2": { "q": "A mund të integrojë universiteti im shpejt StazhLink?", "a": "Po. StazhLink është projektuar për integrim të shpejtë. Ekipi juaj administrativ mund të konfigurojë departamentet, të ftojë stafin akademik dhe të fillojë menaxhimin e praktikave brenda pak ditësh." },
+      "3": { "q": "A është platforma e sigurtë dhe në përputhje me GDPR?", "a": "Absolutisht. StazhLink ndjek udhëzimet e GDPR, enkripton të gjitha të dhënat e ndjeshme dhe ofron kontroll aksesi bazuar në role për të mbrojtur informacionet e studentëve dhe institucioneve." },
+      "4": { "q": "Si mund të kontaktoj mbështetjen?", "a": "Mund të kontaktoni ekipin tonë të mbështetjes në info@stazhlink.com ose të përdorni bisedën e drejtpërdrejtë brenda platformës. Ne zakonisht përgjigjemi brenda një dite pune." },
+      "5": { "q": "A është StazhLink falas për studentët?", "a": "Po, studentët aksesojnë StazhLink falas nëpërmjet universitetit të tyre. Nuk ka tarifa për studentët të aplikojnë ose të gjurmojnë praktikën e tyre." }
+    },
+    "students": {
+      "0": { "q": "Si të gjej dhe aplikoj për praktika?", "a": "Shfleto listingjet e disponueshme nga kompanitë partnere direkt në panelin tuaj studentor dhe dërgoni aplikimin tuaj me një klik." },
+      "1": { "q": "A kam nevojë për mbikëqyrje nga stafi akademik për të aplikuar?", "a": "Disa praktika kërkojnë që një profesor të miratojë kërkesën tuaj të mbikëqyrjes përpara se kompania të vazhdojë. Universiteti juaj e vendos këtë politikë." },
+      "2": { "q": "A mund të gjurmoj statusin e aplikimit tim?", "a": "Po, paneli juaj tregon përditësime të statusit në kohë reale për çdo aplikim të dërguar." },
+      "3": { "q": "Si ta shkarkoj certifikatën e përfundimit të praktikës?", "a": "Pasi praktika juaj shënohet e përfunduar nga kompania dhe profesori juaj, mund të shkarkoni certifikatën zyrtare nga profili juaj." }
+    },
+    "companies": {
+      "0": { "q": "Si mund të postojë praktika një kompani?", "a": "Pasi të regjistroni kompaninë, shkoni te paneli juaj dhe klikoni 'Posto Praktikë'. Plotëso detajet, kërkesat dhe vendet e disponueshme." },
+      "1": { "q": "Si shqyrton dhe pranon aplikimet e studentëve një kompani?", "a": "Aplikimet shfaqen në panelin tuaj ndërsa studentët aplikojnë. Mund të shqyrtoni dokumentet, të lini shënime dhe të pranoni ose refuzoni me një klik." },
+      "2": { "q": "A mund të lëmë vlerësime për stazhierët?", "a": "Po, në fund të praktikës, kompanitë mund të dorëzojnë një raport të strukturuar vlerësimi i cili bëhet pjesë e dosjes së studentit." },
+      "3": { "q": "A gjenerohen automatikisht kontratat e praktikës?", "a": "Po. Pasi të gjitha palët miratojnë, StazhLink gjeneron një vlerësim zyrtar praktike që mund të firmoset dhe shkarkohet nga të gjitha palët." }
+    }
+  }
+}

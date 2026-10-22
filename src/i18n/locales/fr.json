@@ -1,0 +1,336 @@
+{
+  "navbar": {
+    "product": "Produit",
+    "forUniversities": "Pour les Universités",
+    "forCompanies": "Pour les Entreprises",
+    "faq": "FAQ",
+    "about": "À propos",
+    "login": "Connexion",
+    "requestDemo": "Demander une Démo"
+  },
+  "footer": {
+    "cta": "Structurez votre Programme de Stages",
+    "requestDemo": "Demander une Démo",
+    "getStarted": "Commencer Aujourd'hui",
+    "copyright": "© 2025 StazhLink. Tous droits réservés.",
+    "privacyPolicy": "Politique de Confidentialité",
+    "terms": "Conditions Générales"
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "La Plateforme de Gestion des Stages",
+      "titleLine2": "pour les Universités",
+      "subtitle": "Connecter Étudiants, Professeurs, Entreprises et Administrateurs dans un Système Unifié.",
+      "primaryBtn": "Demander une Démo",
+      "secondaryBtn": "Accéder à la Plateforme",
+      "mockupTitle": "Progression des Candidatures de Stage"
+    },
+    "problem": {
+      "title": "Les Processus de Stage sont",
+      "titleStrong": "Brisés...",
+      "studentsBold": "Étudiants",
+      "studentsDesc": "sont Perdus dans leur Recherche",
+      "professorsBold": "Professeurs",
+      "professorsDesc": "Manquent de Visibilité",
+      "companiesBold": "Entreprises",
+      "companiesDesc": "N'atteignent pas les Étudiants",
+      "adminsBold": "Admins",
+      "adminsDesc": "N'ont aucun Contrôle",
+      "fixesTitle": "StazhLink Résout Cela",
+      "fixesSub": "Solution Tout-en-Un pour la Gestion des Stages",
+      "howTitle": "Comment ça Marche"
+    },
+    "steps": {
+      "0": "Trouver un Stage",
+      "1": "Demander un Professeur",
+      "2": "Approbation de l'Entreprise",
+      "3": "Approbation du Professeur",
+      "4": "Stage Terminé"
+    },
+    "everyone": {
+      "title": "Une Plateforme pour Tous",
+      "studentsLabel": "Pour les Étudiants",
+      "professorsLabel": "Pour les Professeurs",
+      "companiesLabel": "Pour les Entreprises",
+      "adminsLabel": "Pour les Administrateurs",
+      "studentsAction": "Chercher, Postuler, Suivre",
+      "professorsAction": "Superviser et Approuver",
+      "companiesAction": "Publier et Gérer les Stagiaires",
+      "adminsAction": "Superviser et Rapporter"
+    },
+    "features": {
+      "title": "Fonctionnalités Clés de",
+      "titleAccent": "StazhLink",
+      "internshipListings": "Offres de Stage",
+      "applicationTracking": "Suivi des Candidatures",
+      "professorSupervision": "Supervision par Professeur",
+      "automatedDocs": "Documents Automatisés",
+      "feedbackReporting": "Retours et Rapports",
+      "roleBasedDashboards": "Tableaux de Bord par Rôle"
+    }
+  },
+  "forUniversities": {
+    "hero": {
+      "titleStrong1": "Optimiser la Gestion des Stages",
+      "titleRest": "",
+      "titleLine2": "dans votre Université",
+      "subtitle": "StazhLink permet aux administrateurs universitaires de superviser et gérer les stages depuis une plateforme centralisée, assurant une coordination et une conformité optimales.",
+      "primaryBtn": "Demander une Démo",
+      "secondaryBtn": "Essai Gratuit"
+    },
+    "challenges": {
+      "sectionTitle": "Défis",
+      "sectionStrong1": "Courants",
+      "sectionRest": " des Universités avec les",
+      "sectionStrong2": "Stages",
+      "c1": {
+        "title": "Manque de Visibilité",
+        "i1": "Visibilité limitée sur la progression des stages étudiants",
+        "i2": "Difficile de suivre les approbations entre les départements",
+        "i3": "Le suivi manuel ralentit la coordination"
+      },
+      "c2": {
+        "title": "Supervision des Professeurs",
+        "i1": "Les étudiants ont besoin d'orientation pour trouver des stages adaptés",
+        "i2": "La communication entre étudiants et professeurs est fragmentée",
+        "i3": "Le suivi de la progression et les retours demandent trop de travail manuel"
+      },
+      "c3": {
+        "title": "Conformité des Stages",
+        "i1": "Les exigences de stage sont gérées manuellement",
+        "i2": "Des documents manquants peuvent retarder les approbations",
+        "i3": "Maintenir un dossier clair pour chaque stage est difficile"
+      },
+      "c4": {
+        "title": "Analytiques et Rapports",
+        "i1": "Les rapports dépendent souvent de tableurs et de mises à jour manuelles",
+        "i2": "Il est difficile de surveiller l'activité de stage à grande échelle",
+        "i3": "Les universités manquent de données claires sur les résultats et retours"
+      }
+    },
+    "dashboard": {
+      "title": "Tableau de Bord Centralisé pour une",
+      "titleStrong": "Supervision Totale",
+      "f1bold": "Voir Toute l'Activité",
+      "f1rest": " des Stages",
+      "f2bold": "Suivre les",
+      "f2rest": " Approbations de Stage",
+      "f3bold": "Gérer le Corps Enseignant",
+      "f3rest": " et les Départements",
+      "f4bold": "Auditer",
+      "f4mid": " et ",
+      "f4bold2": "Rapporter",
+      "f4rest": " sur la Conformité"
+    },
+    "supervision": {
+      "titlePre": "Gestion de la",
+      "titleStrong": "Supervision",
+      "titlePost": " des Professeurs",
+      "subtitle": "Amélioration des processus d'approbation des stages pour les étudiants universitaires.",
+      "requestsTitle": "Demandes de Supervision",
+      "requestsDesc": "Les professeurs reçoivent et évaluent les demandes de supervision des étudiants directement sur la plateforme.",
+      "workflowTitle": "Processus d'Approbation",
+      "workflowDesc": "Approuver ou rejeter les candidatures de stage via un processus structuré étape par étape.",
+      "monitoringTitle": "Suivi des Progrès",
+      "monitoringDesc": "Suivre la progression de chaque stagiaire et s'assurer que les exigences académiques sont respectées."
+    }
+  },
+  "forCompanies": {
+    "hero": {
+      "titleStrong1": "Optimisez",
+      "titleRest": " votre Processus de",
+      "titleLine2Strong": "Recrutement",
+      "titleLine2Rest": " de Stagiaires",
+      "subtitle": "Utilisez StazhLink pour vous connecter avec des étudiants universitaires à la recherche de stages. Gérez facilement les candidatures et recrutez les meilleurs talents des meilleures universités.",
+      "primaryBtn": "Inscrire mon Entreprise",
+      "secondaryBtn": "Essai Gratuit"
+    },
+    "features": {
+      "titleStrong": "Plateforme Dédiée",
+      "titleRest": " à la Gestion des Stages pour les",
+      "titleStrong2": "Entreprises",
+      "c1": {
+        "title": "Publication Facile des Stages",
+        "i1": "Publiez des stages avec des descriptions et exigences détaillées",
+        "i2": "Recevez directement des candidatures d'étudiants universitaires"
+      },
+      "c2": {
+        "title": "Gestion Intelligente des Candidats",
+        "i1": "Examinez les candidatures avec tous les documents",
+        "i2": "Suivez la progression du stage et laissez des retours"
+      },
+      "c3": {
+        "title": "Conformité et Documentation",
+        "i1": "Générez des rapports officiels de retours de stage",
+        "i2": "Téléchargez en toute sécurité les certificats de fin de stage"
+      }
+    },
+    "howItWorks": {
+      "titlePre": "Comment",
+      "titleStrong": "StazhLink",
+      "titleMid": " Fonctionne pour les",
+      "titleStrong2": "Entreprises",
+      "s1": {
+        "title": "Publier des Stages",
+        "i1": "Créez et publiez des offres de stage",
+        "i2": "Définissez les qualifications et exigences"
+      },
+      "s2": {
+        "title": "Recevoir des Candidatures",
+        "i1": "Examinez les candidatures et les documents",
+        "i2": "Filtrez et classez facilement les candidats"
+      },
+      "s3": {
+        "title": "Évaluer et Sélectionner",
+        "i1": "Acceptez ou refusez les candidats en un clic",
+        "i2": "Échangez directement avec les candidats sur StazhLink"
+      },
+      "s4": {
+        "title": "Retours et Rapports",
+        "i1": "Suivez la progression des stagiaires et donnez vos retours",
+        "i2": "Générez des rapports PDF officiels pour les stages terminés"
+      }
+    }
+  },
+  "product": {
+    "hero": {
+      "titlePre": "Simplifiez",
+      "titleStrong": "le Processus de Stage",
+      "titlePost": " de votre Université",
+      "subtitle": "StazhLink aide les universités, étudiants, professeurs et entreprises à collaborer efficacement grâce à un processus d'approbation structuré.",
+      "mockupTitle": "Progression des Candidatures de Stage",
+      "workflowStrong": "Processus Guidé",
+      "workflowPost": " pour les Étudiants",
+      "cl1": "Parcourir et Postuler aux Stages",
+      "cl2": "Demander la Supervision d'un Professeur",
+      "cl3": "Suivre l'Avancement de votre Candidature",
+      "cl4": "Recevoir les Documents Officiels de Stage",
+      "requestDemo": "Demander une Démo"
+    },
+    "roles": {
+      "title": "Une Plateforme Basée sur les Rôles pour une Collaboration Optimale",
+      "subtitle": "Des tableaux de bord personnalisés offrent les bons outils et informations pour chaque type d'utilisateur.",
+      "studentsLabel": "Étudiants",
+      "studentsI1": "Rechercher et filtrer les stages",
+      "studentsI2": "Demander la supervision d'un professeur",
+      "studentsI3": "Postuler et suivre le statut des candidatures",
+      "studentsI4": "Télécharger les certificats de fin de stage",
+      "companiesLabel": "Entreprises",
+      "companiesI1": "Publier des offres de stage",
+      "companiesI2": "Examiner et gérer les candidatures étudiantes",
+      "companiesI3": "Laisser des retours sur les stagiaires",
+      "companiesI4": "Générer les documents de stage",
+      "professorsLabel": "Professeurs",
+      "professorsI1": "Recevoir et évaluer les demandes de supervision",
+      "professorsI2": "Approuver ou rejeter les candidatures de stage",
+      "professorsI3": "Surveiller la progression des stagiaires",
+      "adminsLabel": "Administrateurs",
+      "adminsI1": "Gérer les facultés et départements",
+      "adminsI2": "Superviser toute l'activité de stage",
+      "adminsI3": "Assurer la conformité des politiques",
+      "adminsI4": "Accéder à des rapports détaillés"
+    },
+    "dashboards": {
+      "title": "Tableaux de Bord Adaptés à Chaque Rôle",
+      "subtitle": "Des tableaux de bord personnalisés offrent les bons outils et informations pour chaque type d'utilisateur.",
+      "student": "Étudiant",
+      "company": "Entreprise",
+      "professor": "Professeur",
+      "admin": "Admin",
+      "suffix": "Tableau de Bord"
+    }
+  },
+  "about": {
+    "hero": {
+      "titleStrong1": "Autonomiser les Universités",
+      "titleRest": " Grâce à une",
+      "titleLine2Strong": "Gestion Optimisée",
+      "titleLine2Rest": " des Stages",
+      "subtitle": "Notre mission est de centraliser et simplifier le processus de stage, en reliant le monde académique et l'industrie au bénéfice des étudiants, professeurs et entreprises.",
+      "primaryBtn": "Notre Histoire",
+      "secondaryBtn": "Essai Gratuit"
+    },
+    "story": {
+      "title": "Notre Histoire",
+      "text": "StazhLink a été fondé pour résoudre un problème urgent auquel font face les universités du monde entier : des processus de stage fragmentés, chronophages et manuels. Nous avons constaté que les étudiants peinaient souvent à trouver des stages, que les professeurs avaient une supervision limitée, et que les entreprises n'avaient pas de canal dédié pour atteindre les talents universitaires. Nous avons créé StazhLink comme solution, une plateforme complète qui réunit toutes les parties prenantes dans un seul système, garantissant un processus de stage structuré, transparent et efficace du début à la fin."
+    },
+    "mission": {
+      "title": "Notre Mission et Vision",
+      "missionTitle": "Notre Mission",
+      "missionPre": "Simplifier et unifier le processus de gestion des stages pour les universités en fournissant une plateforme où ",
+      "missionStudents": "étudiants",
+      "missionComma": ", ",
+      "missionProfessors": "professeurs",
+      "missionAnd": " et ",
+      "missionCompanies": "entreprises",
+      "missionPost": " peuvent collaborer de manière transparente.",
+      "visionTitle": "Notre Vision",
+      "visionText": "Être la plateforme de référence qui comble le fossé entre le monde académique et l'industrie, soutenant le développement de carrière des étudiants à travers des expériences de stage significatives et structurées."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contactez-Nous",
+      "subtitle": "Contactez-nous pour toute question ou pour en savoir plus sur StazhLink."
+    },
+    "form": {
+      "sectionTitle": "Envoyez-Nous un Message",
+      "sectionSub": "Remplissez le formulaire ci-dessous et notre équipe vous répondra dans les plus brefs délais.",
+      "cardTitle": "Envoyez-Nous un Message",
+      "cardSub": "Remplissez le formulaire ci-dessous et notre équipe vous répondra dans les plus brefs délais.",
+      "name": "Nom",
+      "email": "E-mail",
+      "organization": "Organisation (facultatif)",
+      "phone": "Téléphone (facultatif)",
+      "message": "Message",
+      "privacy": "Nous ne partagerons jamais vos informations.",
+      "submit": "Envoyer",
+      "sending": "Envoi en cours…",
+      "successTitle": "Message envoyé !",
+      "successText": "Nous vous répondrons bientôt.",
+      "error": "Une erreur s'est produite. Veuillez réessayer ou nous contacter par e-mail."
+    },
+    "getInTouch": {
+      "title": "Prenez Contact",
+      "emailLabel": "E-mail",
+      "emailNote": "Contactez-nous par e-mail pour toute demande.",
+      "addressLabel": "Adresse",
+      "addressVal": "Tirana, Albanie"
+    }
+  },
+  "faq": {
+    "hero": {
+      "title": "Questions Fréquemment Posées",
+      "subtitle": "Trouvez des réponses aux questions courantes sur StazhLink et le fonctionnement de notre plateforme de gestion des stages.",
+      "searchPlaceholder": "Rechercher une question..."
+    },
+    "tabs": {
+      "general": "Questions Générales",
+      "students": "Pour les Étudiants",
+      "companies": "Pour les Entreprises"
+    },
+    "searchResult_one": "{{count}} résultat pour « {{query}} »",
+    "searchResult_other": "{{count}} résultats pour « {{query}} »",
+    "noResults": "Aucune question ne correspond à votre recherche.",
+    "general": {
+      "0": { "q": "Qu'est-ce que StazhLink ?", "a": "StazhLink est une plateforme de gestion des stages qui connecte les étudiants, professeurs, entreprises et administrateurs universitaires dans un système centralisé pour superviser et gérer l'ensemble du cycle de stage." },
+      "1": { "q": "Comment fonctionne le processus de stage ?", "a": "Les étudiants postulent aux stages, les entreprises examinent les candidatures, les professeurs approuvent les demandes de supervision, et les administrateurs supervisent l'ensemble du processus depuis une seule plateforme." },
+      "2": { "q": "Mon université peut-elle intégrer StazhLink rapidement ?", "a": "Oui. StazhLink est conçu pour une intégration rapide. Votre équipe administrative peut configurer les départements, inviter les enseignants et commencer à gérer les stages en quelques jours." },
+      "3": { "q": "La plateforme est-elle sécurisée et conforme au RGPD ?", "a": "Absolument. StazhLink suit les directives du RGPD, chiffre toutes les données sensibles et fournit un contrôle d'accès basé sur les rôles pour protéger les informations des étudiants et des institutions." },
+      "4": { "q": "Comment contacter le support ?", "a": "Vous pouvez joindre notre équipe de support à info@stazhlink.com ou utiliser le chat en direct dans la plateforme. Nous répondons généralement dans un délai d'un jour ouvrable." },
+      "5": { "q": "StazhLink est-il gratuit pour les étudiants ?", "a": "Oui, les étudiants accèdent à StazhLink gratuitement via leur université. Il n'y a aucun frais pour postuler ou suivre leurs stages." }
+    },
+    "students": {
+      "0": { "q": "Comment trouver et postuler à des stages ?", "a": "Parcourez les offres disponibles des entreprises partenaires directement depuis votre tableau de bord étudiant et soumettez votre candidature en un clic." },
+      "1": { "q": "Ai-je besoin d'une supervision enseignante pour postuler ?", "a": "Certains stages nécessitent qu'un professeur approuve votre demande de supervision avant que l'entreprise puisse procéder. Votre université définit cette politique." },
+      "2": { "q": "Puis-je suivre le statut de ma candidature ?", "a": "Oui, votre tableau de bord affiche des mises à jour en temps réel pour chaque candidature soumise." },
+      "3": { "q": "Comment télécharger mon certificat de fin de stage ?", "a": "Une fois votre stage marqué comme terminé par l'entreprise et votre professeur, vous pouvez télécharger votre certificat officiel depuis votre profil." }
+    },
+    "companies": {
+      "0": { "q": "Comment une entreprise peut-elle publier des stages ?", "a": "Après avoir enregistré votre entreprise, allez dans votre tableau de bord et cliquez sur « Publier un Stage ». Remplissez les détails, exigences et places disponibles." },
+      "1": { "q": "Comment une entreprise examine et accepte les candidatures ?", "a": "Les candidatures apparaissent dans votre tableau de bord à mesure que les étudiants postulent. Vous pouvez examiner les documents, laisser des notes et accepter ou refuser en un clic." },
+      "2": { "q": "Pouvons-nous laisser des retours sur les stagiaires ?", "a": "Oui, à la fin du stage, les entreprises peuvent soumettre un rapport de retour structuré qui fait partie du dossier de l'étudiant." },
+      "3": { "q": "Les contrats de stage sont-ils générés automatiquement ?", "a": "Oui. Une fois que toutes les parties approuvent, StazhLink génère un retour de stage officiel qui peut être signé et téléchargé par toutes les parties prenantes." }
+    }
+  }
+}

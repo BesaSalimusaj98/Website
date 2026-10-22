@@ -180,3 +180,99 @@
   .nav { padding: 0 3%; }
   .logo span { font-size: 1rem; }
 }
+
+/* ── Language Switcher ── */
+.langSwitcher {
+  position: relative;
+  display: inline-block;
+}
+
+.langBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  background: rgba(255,255,255,0.14);
+  border: 1.5px solid rgba(255,255,255,0.4);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  line-height: 1;
+}
+
+.langBtn:hover {
+  background: rgba(255,255,255,0.24);
+  border-color: rgba(255,255,255,0.65);
+}
+
+.langCode {
+  min-width: 22px;
+  text-align: left;
+}
+
+.chevron {
+  transition: transform 0.2s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.langDropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+  z-index: 200;
+  min-width: 0;
+  border: 1px solid #e5e7eb;
+}
+
+.langOption {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: 6px;
+  width: 100%;
+  padding: 8px 12px;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1a3a6e;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.langOption:hover { background: #f0f4fa; }
+
+.langOptionCode {
+  color: #1a3a6e;
+  font-weight: 700;
+}
+
+.langCheck {
+  color: #f46b1b;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.langActive {
+  background: #f8fafc;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .langBtn {
+    padding: 7px 14px;
+    font-size: 0.82rem;
+  }
+}

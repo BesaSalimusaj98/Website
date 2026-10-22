@@ -3,6 +3,7 @@ import adminDashboard from "../assets/admin-dashboard.png";
 import styles from "./ForUniversities.module.css";
 import PageHero from "../components/layout/PageHero";
 import { CONTACT_PAGE_PATH, STAZHLINK_APP_URL } from "../constants/links";
+import { useTranslation } from "react-i18next";
 
 /* ── Challenge card icons ── */
 const icons = {
@@ -48,91 +49,52 @@ const icons = {
   ),
 };
 
-const challenges = [
-  {
-    num: "1",
-    numColor: "#f46b1b",
-    icon: icons.oversight,
-    title: "Lack of Oversight",
-    items: [
-      "Limited visibility into student internship progress",
-      "Difficult to track approvals across departments",
-      "Manual follow-up slows coordination",
-    ],
-  },
-  {
-    num: "2",
-    numColor: "#1a3a6e",
-    icon: icons.supervision,
-    title: "Professor Supervision",
-    items: [
-      "Students need guidance to find suitable internships",
-      "Communication between students and professors is fragmented",
-      "Tracking progress and giving feedback takes too much manual work",
-    ],
-  },
-  {
-    num: "A",
-    numColor: "#2563eb",
-    icon: icons.compliance,
-    title: "Internship Compliance",
-    items: [
-      "Internship requirements are handled manually",
-      "Missing documents can delay approvals",
-      "Keeping a clear record of each internship is difficult",
-    ],
-  },
-  {
-    num: "5",
-    numColor: "#f46b1b",
-    icon: icons.analytics,
-    title: "Analytics & Report",
-    items: [
-      "Reporting often depends on spreadsheets and manual updates",
-      "It is hard to monitor internship activity at scale",
-      "Universities lack clear insights into outcomes and feedback",
-    ],
-  },
-];
-
-const dashFeatures = [
-  { bold: "View All Internship", rest: " Activity" },
-  { bold: "Track Internship", rest: " Approvals" },
-  { bold: "Manage Faculty", rest: " and Departments" },
-  { bold: "Audit", rest: " and " },
-  { bold: "Report", rest: " on Compliance" },
-];
-
 export default function ForUniversities() {
+  const { t } = useTranslation();
+
+  const challenges = [
+    { num: "1", numColor: "#f46b1b", icon: icons.oversight, titleKey: "forUniversities.challenges.c1.title", items: [t('forUniversities.challenges.c1.i1'), t('forUniversities.challenges.c1.i2'), t('forUniversities.challenges.c1.i3')] },
+    { num: "2", numColor: "#1a3a6e", icon: icons.supervision, titleKey: "forUniversities.challenges.c2.title", items: [t('forUniversities.challenges.c2.i1'), t('forUniversities.challenges.c2.i2'), t('forUniversities.challenges.c2.i3')] },
+    { num: "A", numColor: "#2563eb", icon: icons.compliance, titleKey: "forUniversities.challenges.c3.title", items: [t('forUniversities.challenges.c3.i1'), t('forUniversities.challenges.c3.i2'), t('forUniversities.challenges.c3.i3')] },
+    { num: "5", numColor: "#f46b1b", icon: icons.analytics, titleKey: "forUniversities.challenges.c4.title", items: [t('forUniversities.challenges.c4.i1'), t('forUniversities.challenges.c4.i2'), t('forUniversities.challenges.c4.i3')] },
+  ];
+
+  const dashFeatures = [
+    { boldKey: "forUniversities.dashboard.f1bold", restKey: "forUniversities.dashboard.f1rest" },
+    { boldKey: "forUniversities.dashboard.f2bold", restKey: "forUniversities.dashboard.f2rest" },
+    { boldKey: "forUniversities.dashboard.f3bold", restKey: "forUniversities.dashboard.f3rest" },
+    { boldKey: "forUniversities.dashboard.f4bold", restKey: "forUniversities.dashboard.f4rest" },
+  ];
+
   return (
     <main className={styles.page}>
 
       {/* ── Section 1: Hero ── */}
       <PageHero
-        title={<><strong>Streamline Internship</strong> Management<br />Across Your University</>}
-        subtitle="StazhLink empowers university administrators to oversee and manage internships from a central platform, ensuring seamless coordination and compliance."
+        title={<><strong>{t('forUniversities.hero.titleStrong1')}</strong>{t('forUniversities.hero.titleRest')}<br /><strong>{t('forUniversities.hero.titleLine2')}</strong></>}
+        subtitle={t('forUniversities.hero.subtitle')}
         imgSrc={universitiesHero}
         imgAlt="University internship management"
-        primaryBtn={{ label: "Request Demo", href: CONTACT_PAGE_PATH }}
-        secondaryBtn={{ label: "Start Free Trial", href: STAZHLINK_APP_URL, target: "_blank", rel: "noopener noreferrer" }}
+        primaryBtn={{ label: t('forUniversities.hero.primaryBtn'), href: CONTACT_PAGE_PATH }}
+        secondaryBtn={{ label: t('forUniversities.hero.secondaryBtn'), href: STAZHLINK_APP_URL, target: "_blank", rel: "noopener noreferrer" }}
         waveColor="#f0f4fa"
       />
 
       {/* ── Section 2: Challenges ── */}
       <section className={styles.challenges}>
         <h2 className={styles.sectionTitle}>
-          Common <strong>Challenges</strong> Universities Face with <strong>Internships</strong>
+          {t('forUniversities.challenges.sectionTitle')} <strong>{t('forUniversities.challenges.sectionStrong1')}</strong>{t('forUniversities.challenges.sectionRest')}<strong>{t('forUniversities.challenges.sectionStrong2')}</strong>
         </h2>
 
         <div className={styles.challengeGrid}>
           {challenges.map((c) => (
-            <div key={c.title} className={styles.challengeCard}>
+            <div key={c.titleKey} className={styles.challengeCard}>
               <div className={styles.challengeIcon}>{c.icon}</div>
               <div className={styles.challengeHeading}>
                 <span className={styles.challengeNum} style={{ background: c.numColor }}>
                   {c.num}
                 </span>
-                <strong>{c.title}</strong>
+                <strong>{t(c.titleKey)}</strong>
               </div>
               <ul className={styles.challengeList}>
                 {c.items.map((item) => (
@@ -152,7 +114,7 @@ export default function ForUniversities() {
       {/* ── Section 3: Dashboard ── */}
       <section className={styles.dashboard}>
         <h2 className={styles.sectionTitle}>
-          Centralized Dashboard for <strong>Full Oversight</strong>
+          {t('forUniversities.dashboard.title')} <strong>{t('forUniversities.dashboard.titleStrong')}</strong>
         </h2>
 
         <div className={styles.dashInner}>
@@ -166,7 +128,7 @@ export default function ForUniversities() {
                   <circle cx="11" cy="11" r="11" fill="#1a3a6e" />
                   <path d="M7 11l3 3 5-5" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <span><strong>{f.bold}</strong>{f.rest}</span>
+                <span><strong>{t(f.boldKey)}</strong>{t(f.restKey)}</span>
               </li>
             ))}
           </ul>
@@ -176,22 +138,20 @@ export default function ForUniversities() {
       {/* ── Section 4: Professor Supervision teaser ── */}
       <section className={styles.supervision}>
         <h2 className={styles.sectionTitle}>
-          Professor <strong>Supervision</strong> Management
+          {t('forUniversities.supervision.titlePre')}<strong>{t('forUniversities.supervision.titleStrong')}</strong>{t('forUniversities.supervision.titlePost')}
         </h2>
-        <p className={styles.sectionSub}>
-          Increasing internship approvals blocking and processes for university Students.
-        </p>
+        <p className={styles.sectionSub}>{t('forUniversities.supervision.subtitle')}</p>
 
         <div className={styles.supCards}>
           {[
-            { emoji: "📋", title: "Supervision Requests", desc: "Professors receive and evaluate student supervision requests directly in the platform." },
-            { emoji: "✅", title: "Approval Workflow", desc: "Approve or reject internship applications with a structured step-by-step process." },
-            { emoji: "📊", title: "Progress Monitoring", desc: "Track each intern's progress and ensure academic requirements are met." },
+            { emoji: "📋", titleKey: "forUniversities.supervision.requestsTitle", descKey: "forUniversities.supervision.requestsDesc" },
+            { emoji: "✅", titleKey: "forUniversities.supervision.workflowTitle", descKey: "forUniversities.supervision.workflowDesc" },
+            { emoji: "📊", titleKey: "forUniversities.supervision.monitoringTitle", descKey: "forUniversities.supervision.monitoringDesc" },
           ].map((card) => (
-            <div key={card.title} className={styles.supCard}>
+            <div key={card.titleKey} className={styles.supCard}>
               <div className={styles.supEmoji}>{card.emoji}</div>
-              <h3>{card.title}</h3>
-              <p>{card.desc}</p>
+              <h3>{t(card.titleKey)}</h3>
+              <p>{t(card.descKey)}</p>
             </div>
           ))}
         </div>
